@@ -134,10 +134,9 @@
     <pkg priority="core">DICOM</pkg>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
-    <pkg>MASS</pkg>
+    <pkg>VR</pkg>
     <pkg>minpack.lm</pkg>
     <pkg priority="core">PET</pkg>
-    <pkg>splines</pkg> 
     <pkg priority="core">tractor.base</pkg>
   </packagelist>
 
