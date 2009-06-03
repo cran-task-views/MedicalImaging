@@ -1,0 +1,147 @@
+<CRANTaskView>
+  <name>MedicalImaging</name>
+  <topic>Medical Image Analysis</topic>
+  <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
+  <version>2009-06-03</version>
+
+  <info>
+    <p><strong>Data Input/Output</strong></p>
+    <p><em>DICOM</em></p>
+    <p>The industry standard format, for data coming off a clinical
+    imaging device, is <a href="http://dicom.nema.org">DICOM</a>
+    (Digital Imaging and Communications in Medicine).  The DICOM
+    "standard" is very broad and very complicated.  Roughly speaking
+    each DICOM-compliant file is a collection of fields organized into
+    two four-byte sequences (group,element) that are represented as
+    hexadecimal numbers and form a <em>tag</em>.  The (group,element)
+    combination announces what type of information is coming next.
+    There is no fixed number of bytes for a DICOM header.  The final
+    (group,element) tag should be the "data" tag (7FE0,0010), such
+    that all subsequent information is related to the image(s).</p>
+    <ul>
+      <li>The packages <pkg>DICOM</pkg>, <pkg>fmri</pkg> and
+      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project)
+      provide R functions that read DICOM files and facilitate their
+      conversion to ANALYZE or NIfTI format.</li>
+    </ul>
+    <p><em>ANALYZE and NIfTI</em></p>
+    <p>Although the industry standard for medical imaging data is
+    DICOM, another format has come to be heavily used in the image
+    analysis community.  The <a
+    href="http://www.mayo.edu/bir/PDF/ANALYZE75.pdf">ANALYZE</a>
+    format was originally developed in conjunction with an image
+    processing system (of the same name) at the Mayo Foundation.  An
+    Anlayze (7.5) format image is comprised of two files, the "hdr"
+    and "img" files, that contain information about the acquisition
+    and the acquisition itself, respectively.  A more recent adaption
+    of this format is known as <a
+    href="http://nifti.nimh.nih.gov/nifti-1">NIfTI-1</a> and is a
+    product of the Data Format Working Group (DFWG) from the
+    Neuroimaging Informatics Technology Initiative (NIfTI).  The
+    NIfTI-1 data format is almost identical to the ANALYZE format, but
+    offers a few improvements: merging of the header and image
+    information into one file (.nii), re-organization of the 348-byte
+    fixed header into more relevant categories and the possibility of
+    extending the header information.</p>
+    <ul>
+      <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg> and
+      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project)
+      provide functions that read/write ANALYZE and NIfTI files.</li>
+    </ul>
+    <p><strong>Magnetic Resonance Imaging (MRI)</strong></p>
+    <p><em>Diffusion Tensor Imaging (DTI)</em></p>
+    <ul>
+      <li>The R-package <pkg>dti</pkg> provides structural adaptive
+      smoothing methods for the analysis of diffusion weighted data in
+      the context of the DTI model.  Due to its edge preserving
+      properties these smoothing methods are capable of reducing noise
+      without compromizing significant structures (e.g., fibre
+      tracts).  The package also provides functions for DTI data
+      processing from input, via tensor reconstruction to
+      visualization (2D and 3D).</li>
+      <li>The <pkg>tractor.base</pkg> package (part of the <gcode>tractor</gcode>
+      project) consists of functions for reading, writing and
+      visualising MRI images.  Images may be stored in ANALYZE, NIfTI
+      or DICOM file formats, and can be visualised slice-by-slice or
+      in projection.  It also provides functions for common image
+      manipulation tasks, such as masking and thresholding; and for
+      applying arbitrary functions to image data.  The package is
+      written in pure R.</li>
+    </ul>
+    <p><em>Dynamic Contrast-Enhanced MRI (DCE-MRI)</em></p>
+    <ul>
+      <li>The <pkg>dcemri</pkg> package contains a collection of
+      functions to perform quantitative analysis from a DCE-MRI
+      acquisition on a voxel-by-voxel basis.  The steps involved are:
+      motion correction and/or co-registration, T1 estimation,
+      conversion of signal intensity to gadolinium contrast-agent
+      concentration and kinetic parameter estimation.  Parametric
+      estimation of the kinetic parameters, from a single-compartment
+      (Kety or extended Kety) model, is performed via
+      Levenburg-Marquardt optimization or Bayesian estimation.
+      Semi-parametric estimation of the kinetic parameters is also
+      possible via Bayesian P-splines.</li>
+    </ul>
+    <p><em>Functional MRI</em></p>
+    <ul>
+      <li><pkg>AnalyzeFMRI</pkg> is a package originally written for
+      the processing and analysis of large structural and functional
+      MRI data sets under the ANALYZE format.  It has been updated to
+      include new functionality: complete NIfTI input/output,
+      cross-platform visualization based on Tcl/Tk components, and
+      spatial/temporal ICA (<a
+      href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent
+      Components Analysis</a>) via a graphical user interface
+      (GUI).</li>
+      <li>The R-package <pkg>fmri</pkg> provides tools for the
+      analysis of functional MRI data.  The core is the implementation
+      of a new class of adaptive smoothing methods.  These methods
+      allow for a significant signal enhancement and reduction of
+      false positive detections without, in contrast to traditional
+      non-adaptive smoothing methods, reducing the effective spatial
+      resolution.  This property is especially of interest in the
+      analysis of high-resolution functional MRI.  The package
+      includes functions for input/output of some standard imaging
+      formats (ANALYZE, NIfTI, AFNI, DICOM) as well as for linear
+      modelling the data and signal detection using <a
+      href="http://imaging.mrc-cbu.cam.ac.uk/imaging/PrinciplesRandomFields">Random
+      Field Theory</a>.  It also includes ICA and NGCA (non-Gaussian
+      Components Analysis) based methods and hence has some overlap
+      with <pkg>AnalyzeFMRI</pkg>.</li>
+    </ul>
+    <p><strong>Other</strong></p>
+    <ul>
+      <li><pkg>adimpro</pkg> is a package for 2D digital (color and
+      B/W) images, actually not specific to medical imaging, but for
+      general image processing.</li>
+    </ul>
+    <p><strong>Positron Emission Tomography (PET)</strong></p>
+    <ul>
+      <li>The <pkg>PET</pkg> package contains three of the major
+      iterative reconstruction techniques (Algebraic Reconstruction
+      Technique, Likelihood Reconstruction using Expectation
+      Maximization and Least Squares Conjugate Method) and several
+      direct reconstruction methods for radon transformed data.
+      Furthermore, it offers the possibility to simulate a marked
+      Poisson process with spatial varying intensity.</li>
+    </ul>    
+  </info>
+
+  <packagelist>
+    <pkg priority="core">adimpro</pkg>
+    <pkg priority="core">AnalyzeFMRI</pkg>
+    <pkg>bitops</pkg>
+    <pkg priority="core">DICOM</pkg>
+    <pkg priority="core">dti</pkg>
+    <pkg priority="core">fmri</pkg>
+    <pkg>MASS</pkg>
+    <pkg>minpack.lm</pkg>
+    <pkg priority="core">PET</pkg>
+    <pkg>splines</pkg> 
+    <pkg priority="core">tractor.base</pkg>
+  </packagelist>
+
+  <links>
+    <view>ChemPhys</view>
+  </links>
+</CRANTaskView>
