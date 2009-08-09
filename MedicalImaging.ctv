@@ -47,6 +47,13 @@
       <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg> and
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project)
       provide functions that read/write ANALYZE and NIfTI files.</li>
+      <li>The <pkg>Rniftilib</pkg> package provides read/write capabilities for the NIfTI-1 format.
+The <pkg>Rniftilib</pkg> package provides a R-interface to the C reference library provided by the <a href="http://sourceforge.net/projects/niftilib/">Neuroimaging
+Informatics Technology Initiative</a>.  In contrast to other
+R-packages supporting the ANALYZE and NIfTI-1 format, this package comes without additional
+functions for data processing and is restricted to functions for data handling as provided by the C
+reference library.  The aim of the package is to serve as a common basis for the work with
+multi-dimensional volumetric (neuro)imaging data.</li>
     </ul>
     <p><strong>Magnetic Resonance Imaging (MRI)</strong></p>
     <p><em>Diffusion Tensor Imaging (DTI)</em></p>
@@ -137,6 +144,7 @@
     <pkg>VR</pkg>
     <pkg>minpack.lm</pkg>
     <pkg priority="core">PET</pkg>
+    <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">tractor.base</pkg>
   </packagelist>
 
