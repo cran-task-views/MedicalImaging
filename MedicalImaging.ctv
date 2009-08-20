@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2009-08-09</version>
+  <version>2009-08-20</version>
 
   <info>
     <p><strong>Data Input/Output</strong></p>
@@ -138,6 +138,7 @@ multi-dimensional volumetric (neuro)imaging data.</li>
     <pkg priority="core">adimpro</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
     <pkg>bitops</pkg>
+    <pkg priority="core">dcemri</pkg>
     <pkg priority="core">DICOM</pkg>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
