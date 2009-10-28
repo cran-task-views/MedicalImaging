@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2009-08-20</version>
+  <version>2009-10-28</version>
 
   <info>
     <p><strong>Data Input/Output</strong></p>
@@ -142,7 +142,6 @@ multi-dimensional volumetric (neuro)imaging data.</li>
     <pkg priority="core">DICOM</pkg>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
-    <pkg>VR</pkg>
     <pkg>minpack.lm</pkg>
     <pkg priority="core">PET</pkg>
     <pkg priority="core">Rniftilib</pkg>
