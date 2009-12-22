@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2009-10-28</version>
+  <version>2009-12-22</version>
 
   <info>
     <p><strong>Data Input/Output</strong></p>
@@ -44,8 +44,8 @@
     fixed header into more relevant categories and the possibility of
     extending the header information.</p>
     <ul>
-      <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg> and
-      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project)
+      <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
+      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project), <pkg>dcemri</pkg> and <pkg>NeuroImage</pkg> all
       provide functions that read/write ANALYZE and NIfTI files.</li>
       <li>The <pkg>Rniftilib</pkg> package provides read/write capabilities for the NIfTI-1 format.
 The <pkg>Rniftilib</pkg> package provides a R-interface to the C reference library provided by the <a href="http://sourceforge.net/projects/niftilib/">Neuroimaging
@@ -115,6 +115,7 @@ multi-dimensional volumetric (neuro)imaging data.</li>
       Field Theory</a>.  It also includes ICA and NGCA (non-Gaussian
       Components Analysis) based methods and hence has some overlap
       with <pkg>AnalyzeFMRI</pkg>.</li>
+      <li><pkg>Neuroimage</pkg> is an R library that provides data structures and input/output routines for functional brain imaging data.  It reads and writes NIfTI-1 data and provides S4 classes for handling multi-dimensional images.</li>
     </ul>
     <p><strong>Other</strong></p>
     <ul>
@@ -143,6 +144,7 @@ multi-dimensional volumetric (neuro)imaging data.</li>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
     <pkg>minpack.lm</pkg>
+    <pkg priority="core">NeuroImage</pkg>
     <pkg priority="core">PET</pkg>
     <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">tractor.base</pkg>
