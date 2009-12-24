@@ -45,7 +45,8 @@
     extending the header information.</p>
     <ul>
       <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
-      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project), <pkg>dcemri</pkg> and <pkg>NeuroImage</pkg> all
+      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project), <pkg>dcemri</pkg> and
+      NeuroImage (currently only within the <rforge>neuroimage</rforge> project on R-Forge) all
       provide functions that read/write ANALYZE and NIfTI files.</li>
       <li>The <pkg>Rniftilib</pkg> package provides read/write capabilities for the NIfTI-1 format.
 The <pkg>Rniftilib</pkg> package provides a R-interface to the C reference library provided by the <a href="http://sourceforge.net/projects/niftilib/">Neuroimaging
@@ -144,7 +145,6 @@ multi-dimensional volumetric (neuro)imaging data.</li>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
     <pkg>minpack.lm</pkg>
-    <pkg priority="core">NeuroImage</pkg>
     <pkg priority="core">PET</pkg>
     <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">tractor.base</pkg>
@@ -152,5 +152,6 @@ multi-dimensional volumetric (neuro)imaging data.</li>
 
   <links>
     <view>ChemPhys</view>
+    <rforge>neuroimage</rforge>
   </links>
 </CRANTaskView>
