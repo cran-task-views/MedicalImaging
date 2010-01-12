@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2009-12-22</version>
+  <version>2010-01-11</version>
 
   <info>
     <p><strong>Data Input/Output</strong></p>
@@ -118,11 +118,16 @@ multi-dimensional volumetric (neuro)imaging data.</li>
       with <pkg>AnalyzeFMRI</pkg>.</li>
       <li><pkg>Neuroimage</pkg> is an R library that provides data structures and input/output routines for functional brain imaging data.  It reads and writes NIfTI-1 data and provides S4 classes for handling multi-dimensional images.</li>
     </ul>
-    <p><strong>Other</strong></p>
+    <p><strong>General Image Processing</strong></p>
     <ul>
       <li><pkg>adimpro</pkg> is a package for 2D digital (color and
       B/W) images, actually not specific to medical imaging, but for
       general image processing.</li>
+      <li><bioc>EBImage</bioc>is an R package which provides general purpose 
+      functionality for the reading, writing, processing and analysis of images. 
+      Furthermore, in the context of microscopy-based cellular assays, this package
+      offers tools to transform the images, segment cells and extract quantitative 
+      cellular descriptors.</li>
     </ul>
     <p><strong>Positron Emission Tomography (PET)</strong></p>
     <ul>
@@ -143,6 +148,7 @@ multi-dimensional volumetric (neuro)imaging data.</li>
     <pkg priority="core">dcemri</pkg>
     <pkg priority="core">DICOM</pkg>
     <pkg priority="core">dti</pkg>
+    <bioc priority="core">EBImage</bioc>
     <pkg priority="core">fmri</pkg>
     <pkg>minpack.lm</pkg>
     <pkg priority="core">PET</pkg>
@@ -153,5 +159,6 @@ multi-dimensional volumetric (neuro)imaging data.</li>
   <links>
     <view>ChemPhys</view>
     <rforge>neuroim</rforge>
+    <rforge>arf</rforge>
   </links>
 </CRANTaskView>
