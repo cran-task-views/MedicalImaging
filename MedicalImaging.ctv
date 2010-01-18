@@ -148,7 +148,6 @@ multi-dimensional volumetric (neuro)imaging data.</li>
     <pkg priority="core">dcemri</pkg>
     <pkg priority="core">DICOM</pkg>
     <pkg priority="core">dti</pkg>
-    <bioc priority="core">EBImage</bioc>
     <pkg priority="core">fmri</pkg>
     <pkg>minpack.lm</pkg>
     <pkg priority="core">PET</pkg>
@@ -158,6 +157,7 @@ multi-dimensional volumetric (neuro)imaging data.</li>
 
   <links>
     <view>ChemPhys</view>
+    <bioc>EBImage</bioc>
     <rforge>neuroim</rforge>
     <rforge>arf</rforge>
   </links>
