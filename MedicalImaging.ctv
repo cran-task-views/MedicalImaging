@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2010-01-11</version>
+  <version>2010-01-15</version>
 
   <info>
     <p><strong>Data Input/Output</strong></p>
@@ -20,9 +20,9 @@
     that all subsequent information is related to the image(s).</p>
     <ul>
       <li>The packages <pkg>DICOM</pkg>, <pkg>fmri</pkg> and
-      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project)
-      provide R functions that read DICOM files and facilitate their
-      conversion to ANALYZE or NIfTI format.</li>
+      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
+      project) provide R functions that read DICOM files and
+      facilitate their conversion to ANALYZE or NIfTI format.</li>
     </ul>
     <p><em>ANALYZE and NIfTI</em></p>
     <p>Although the industry standard for medical imaging data is
@@ -45,16 +45,22 @@
     extending the header information.</p>
     <ul>
       <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
-      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode> project), <pkg>dcemri</pkg> and
-      NeuroImage (currently only within the <rforge>neuroim</rforge> project on R-Forge) all
+      <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
+      project), <pkg>dcemri</pkg> and NeuroImage (currently only
+      within the <rforge>neuroim</rforge> project on R-Forge) all
       provide functions that read/write ANALYZE and NIfTI files.</li>
-      <li>The <pkg>Rniftilib</pkg> package provides read/write capabilities for the NIfTI-1 format.
-The <pkg>Rniftilib</pkg> package provides a R-interface to the C reference library provided by the <a href="http://sourceforge.net/projects/niftilib/">Neuroimaging
-Informatics Technology Initiative</a>.  In contrast to other
-R-packages supporting the ANALYZE and NIfTI-1 format, this package comes without additional
-functions for data processing and is restricted to functions for data handling as provided by the C
-reference library.  The aim of the package is to serve as a common basis for the work with
-multi-dimensional volumetric (neuro)imaging data.</li>
+      <li>The <pkg>Rniftilib</pkg> package provides read/write
+      capabilities for the NIfTI-1 format.  The <pkg>Rniftilib</pkg>
+      package provides a R-interface to the C reference library
+      provided by the <a
+      href="http://sourceforge.net/projects/niftilib/">Neuroimaging
+      Informatics Technology Initiative</a>.  In contrast to other
+      R-packages supporting the ANALYZE and NIfTI-1 format, this
+      package comes without additional functions for data processing
+      and is restricted to functions for data handling as provided by
+      the C reference library.  The aim of the package is to serve as
+      a common basis for the work with multi-dimensional volumetric
+      (neuro)imaging data.</li>
     </ul>
     <p><strong>Magnetic Resonance Imaging (MRI)</strong></p>
     <p><em>Diffusion Tensor Imaging (DTI)</em></p>
@@ -67,14 +73,14 @@ multi-dimensional volumetric (neuro)imaging data.</li>
       tracts).  The package also provides functions for DTI data
       processing from input, via tensor reconstruction to
       visualization (2D and 3D).</li>
-      <li>The <pkg>tractor.base</pkg> package (part of the <gcode>tractor</gcode>
-      project) consists of functions for reading, writing and
-      visualising MRI images.  Images may be stored in ANALYZE, NIfTI
-      or DICOM file formats, and can be visualised slice-by-slice or
-      in projection.  It also provides functions for common image
-      manipulation tasks, such as masking and thresholding; and for
-      applying arbitrary functions to image data.  The package is
-      written in pure R.</li>
+      <li>The <pkg>tractor.base</pkg> package (part of the
+      <gcode>tractor</gcode> project) consists of functions for
+      reading, writing and visualising MRI images.  Images may be
+      stored in ANALYZE, NIfTI or DICOM file formats, and can be
+      visualised slice-by-slice or in projection.  It also provides
+      functions for common image manipulation tasks, such as masking
+      and thresholding; and for applying arbitrary functions to image
+      data.  The package is written in pure R.</li>
     </ul>
     <p><em>Dynamic Contrast-Enhanced MRI (DCE-MRI)</em></p>
     <ul>
@@ -89,6 +95,10 @@ multi-dimensional volumetric (neuro)imaging data.</li>
       Levenburg-Marquardt optimization or Bayesian estimation.
       Semi-parametric estimation of the kinetic parameters is also
       possible via Bayesian P-splines.</li>
+      <li>The <pkg>dcemriS4</pkg> is an S4 implementation of
+      <pkg>dcemri</pkg> with additional capabilities including:
+      read/write for NIfTI extensions, full audit trail, improved
+      visualization, etc.</li>
     </ul>
     <p><em>Functional MRI</em></p>
     <ul>
@@ -101,6 +111,10 @@ multi-dimensional volumetric (neuro)imaging data.</li>
       href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent
       Components Analysis</a>) via a graphical user interface
       (GUI).</li>
+      <li>Activated Region Fitting (ARF) is a program for functional
+      magnetic resonance imaging (fMRI) data analysis.  The R-Forge
+      project <rforge>arf</rforge> uses Gaussian shape spatial models
+      to parameterize active brain regions.</li>
       <li>The R-package <pkg>fmri</pkg> provides tools for the
       analysis of functional MRI data.  The core is the implementation
       of a new class of adaptive smoothing methods.  These methods
@@ -116,17 +130,34 @@ multi-dimensional volumetric (neuro)imaging data.</li>
       Field Theory</a>.  It also includes ICA and NGCA (non-Gaussian
       Components Analysis) based methods and hence has some overlap
       with <pkg>AnalyzeFMRI</pkg>.</li>
-      <li><pkg>Neuroimage</pkg> is an R library that provides data structures and input/output routines for functional brain imaging data.  It reads and writes NIfTI-1 data and provides S4 classes for handling multi-dimensional images.</li>
+      <li>Neuroimage is an R package (currently only within the
+      <rforge>neuroim</rforge> project on R-Forge) that provides data
+      structures and input/output routines for functional brain
+      imaging data.  It reads and writes NIfTI-1 data and provides S4
+      classes for handling multi-dimensional images.</li>
+      <li>Compute Unified Device Architecture (CUDA) is a software
+      platform for massively parallel high-performance computing on
+      NVIDIA GPUs. <pkg>cudaBayesreg</pkg> provides a CUDA
+      implementation of a Bayesian multilevel model for the analysis
+      of brain fMRI data.  The CUDA programming model uses a separate
+      thread for fitting a linear regression model at each voxel in
+      parallel.  The global statistical model implements a Gibbs
+      Sampler for hierarchical linear models with a normal prior.
+      This model has been proposed by Rossi, Allenby and McCulloch in
+      <a href="http://dx.doi.org/10.1002/0470863692">Bayesian
+      Statistics and Marketing</a>, Chapter 3, and is referred to as
+      "rhierLinearModel" in the R-package <pkg>bayesm</pkg>.</li>
     </ul>
     <p><strong>General Image Processing</strong></p>
     <ul>
       <li><pkg>adimpro</pkg> is a package for 2D digital (color and
       B/W) images, actually not specific to medical imaging, but for
       general image processing.</li>
-      <li><bioc>EBImage</bioc>is an R package which provides general purpose 
-      functionality for the reading, writing, processing and analysis of images. 
-      Furthermore, in the context of microscopy-based cellular assays, this package
-      offers tools to transform the images, segment cells and extract quantitative 
+      <li><bioc>EBImage</bioc>is an R package which provides general
+      purpose functionality for the reading, writing, processing and
+      analysis of images.  Furthermore, in the context of
+      microscopy-based cellular assays, this package offers tools to
+      transform the images, segment cells and extract quantitative
       cellular descriptors.</li>
     </ul>
     <p><strong>Positron Emission Tomography (PET)</strong></p>
@@ -144,12 +175,12 @@ multi-dimensional volumetric (neuro)imaging data.</li>
   <packagelist>
     <pkg priority="core">adimpro</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
-    <pkg>bitops</pkg>
+    <pkg>cudaBayesreg</pkg>
     <pkg priority="core">dcemri</pkg>
+    <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">DICOM</pkg>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
-    <pkg>minpack.lm</pkg>
     <pkg priority="core">PET</pkg>
     <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">tractor.base</pkg>
