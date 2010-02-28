@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2010-01-20</version>
+  <version>2010-02-28</version>
 
   <info>
     <p><strong>Data Input/Output</strong></p>
@@ -19,7 +19,7 @@
     (group,element) tag should be the "data" tag (7FE0,0010), such
     that all subsequent information is related to the image(s).</p>
     <ul>
-      <li>The packages <pkg>DICOM</pkg>, <pkg>fmri</pkg> and
+      <li>The packages <pkg>oro.dicom</pkg>, <pkg>fmri</pkg> and
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
       project) provide R functions that read DICOM files and
       facilitate their conversion to ANALYZE or NIfTI format.</li>
@@ -178,9 +178,9 @@
     <pkg>cudaBayesreg</pkg>
     <pkg priority="core">dcemri</pkg>
     <pkg priority="core">dcemriS4</pkg>
-    <pkg priority="core">DICOM</pkg>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
+    <pkg priority="core">oro.dicom</pkg>
     <pkg priority="core">PET</pkg>
     <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">tractor.base</pkg>
