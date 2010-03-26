@@ -46,8 +46,8 @@
     <ul>
       <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
-      project), <pkg>dcemri</pkg> and NeuroImage (currently only
-      within the <rforge>neuroim</rforge> project on R-Forge) all
+      project), <pkg>dcemri</pkg>, <pkg>oro.nifti</pkg> and NeuroImage 
+      (currently only within the <rforge>neuroim</rforge> project on R-Forge) all
       provide functions that read/write ANALYZE and NIfTI files.</li>
       <li>The <pkg>Rniftilib</pkg> package provides read/write
       capabilities for the NIfTI-1 format.  The <pkg>Rniftilib</pkg>
@@ -181,6 +181,7 @@
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
     <pkg priority="core">oro.dicom</pkg>
+    <pkg priority="core">oro.nifti</pkg>
     <pkg priority="core">PET</pkg>
     <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">tractor.base</pkg>
