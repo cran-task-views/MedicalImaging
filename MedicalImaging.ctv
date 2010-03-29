@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2010-02-28</version>
+  <version>2010-03-26</version>
 
   <info>
     <p><strong>Data Input/Output</strong></p>
