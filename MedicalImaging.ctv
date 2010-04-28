@@ -46,9 +46,10 @@
     <ul>
       <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
-      project), <pkg>dcemri</pkg>, <pkg>oro.nifti</pkg> and NeuroImage 
-      (currently only within the <rforge>neuroim</rforge> project on R-Forge) all
-      provide functions that read/write ANALYZE and NIfTI files.</li>
+      project), <pkg>dcemriS4</pkg>, <pkg>oro.nifti</pkg> and
+      NeuroImage (currently only available within the
+      <rforge>neuroim</rforge> project on R-Forge) all provide
+      functions that read/write ANALYZE and NIfTI files.</li>
       <li>The <pkg>Rniftilib</pkg> package provides read/write
       capabilities for the NIfTI-1 format.  The <pkg>Rniftilib</pkg>
       package provides a R-interface to the C reference library
@@ -107,10 +108,8 @@
       MRI data sets under the ANALYZE format.  It has been updated to
       include new functionality: complete NIfTI input/output,
       cross-platform visualization based on Tcl/Tk components, and
-      spatial/temporal ICA (<a
-      href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent
-      Components Analysis</a>) via a graphical user interface
-      (GUI).</li>
+      spatial/temporal ICA (<a href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent Components Analysis</a>) 
+      via a graphical user interface (GUI).</li>
       <li>Activated Region Fitting (ARF) is a program for functional
       magnetic resonance imaging (fMRI) data analysis.  The R-Forge
       project <rforge>arf</rforge> uses Gaussian shape spatial models
@@ -125,14 +124,13 @@
       analysis of high-resolution functional MRI.  The package
       includes functions for input/output of some standard imaging
       formats (ANALYZE, NIfTI, AFNI, DICOM) as well as for linear
-      modelling the data and signal detection using <a
-      href="http://imaging.mrc-cbu.cam.ac.uk/imaging/PrinciplesRandomFields">Random
-      Field Theory</a>.  It also includes ICA and NGCA (non-Gaussian
-      Components Analysis) based methods and hence has some overlap
-      with <pkg>AnalyzeFMRI</pkg>.</li>
-      <li>Neuroimage is an R package (currently only within the
-      <rforge>neuroim</rforge> project on R-Forge) that provides data
-      structures and input/output routines for functional brain
+      modelling the data and signal detection using <a href="http://imaging.mrc-cbu.cam.ac.uk/imaging/PrinciplesRandomFields">Random Field Theory</a>.  
+      It also includes ICA and NGCA (non-Gaussian Components Analysis)
+      based methods and hence has some overlap with
+      <pkg>AnalyzeFMRI</pkg>.</li>
+      <li>Neuroimage is an R package (currently only available within
+      the <rforge>neuroim</rforge> project on R-Forge) that provides
+      data structures and input/output routines for functional brain
       imaging data.  It reads and writes NIfTI-1 data and provides S4
       classes for handling multi-dimensional images.</li>
       <li>Compute Unified Device Architecture (CUDA) is a software
@@ -170,6 +168,24 @@
       Furthermore, it offers the possibility to simulate a marked
       Poisson process with spatial varying intensity.</li>
     </ul>    
+    <p><strong>Electroencephalography (EEG)</strong></p>
+    <ul>
+      <li>The EEG package (currently only available within the
+      <rforge>eeg</rforge> project on R-Forge) reads in single trial
+      EEG (currently only ascii-exported pre-processed and trial
+      segmented in Brain Vision Analyzer), computes averages (i.e.,
+      event-related potentials or ERP's) and stores ERP's from
+      multiple data sets in a <tt>data.frame</tt> like object, such
+      that statistical analysis (linear model, (M)ANOVA) can be done
+      using the familiar R modeling frame work.</li>
+      <li><pkg>PTAk</pkg> is an R package that uses a multiway method
+      to decompose a tensor (array) of any order, as a generalisation
+      of a singular value decomposition (SVD) also supporting
+      non-identity metrics and penalisations.  A 2-way SVD with these
+      extensions is also available.  The package also includes
+      additional multiway methods: PCAn (Tucker-n) and
+      PARAFAC/CANDECOMP with these extensions.</li>
+    </ul>    
   </info>
 
   <packagelist>
@@ -179,10 +195,12 @@
     <pkg priority="core">dcemri</pkg>
     <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">dti</pkg>
+    <pkg>eeg</pkg>
     <pkg priority="core">fmri</pkg>
     <pkg priority="core">oro.dicom</pkg>
     <pkg priority="core">oro.nifti</pkg>
     <pkg priority="core">PET</pkg>
+    <pkg>PTAk</pkg>
     <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">tractor.base</pkg>
   </packagelist>
@@ -192,5 +210,6 @@
     <bioc>EBImage</bioc>
     <rforge>neuroim</rforge>
     <rforge>arf</rforge>
+    <rforge>eeg</rforge>
   </links>
 </CRANTaskView>
