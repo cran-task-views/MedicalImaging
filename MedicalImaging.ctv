@@ -195,7 +195,6 @@
     <pkg priority="core">dcemri</pkg>
     <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">dti</pkg>
-    <pkg>eeg</pkg>
     <pkg priority="core">fmri</pkg>
     <pkg priority="core">oro.dicom</pkg>
     <pkg priority="core">oro.nifti</pkg>
