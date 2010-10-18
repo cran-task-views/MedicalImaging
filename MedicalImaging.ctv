@@ -100,8 +100,9 @@
       read/write for NIfTI extensions, full audit trail, improved
       visualization, etc.  It is recommended that one uses 
       <pkg>dcemriS4</pkg> instead of dcemri.</li>
-    <ul>
+    </ul>
     <p><em>Functional Connectivity</em></p>
+    <ul>
     <li>The <pkg>brainwaver</pkg> package provides basic wavelet
       analysis of multivariate time series with a visualisation and
       parametrisation using graph theory.  It computes the correlation
