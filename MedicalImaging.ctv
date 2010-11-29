@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "b.whitcher@imperial.ac.uk">Brandon Whitcher</maintainer>
-  <version>2010-10-18</version>
+  <version>2010-11-30</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -45,7 +45,7 @@
     <ul>
       <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
-      project), <pkg>dcemriS4</pkg>, <pkg>oro.nifti</pkg> and
+      project), <pkg>oro.nifti</pkg> and
       NeuroImage (currently only available within the
       <rforge>neuroim</rforge> project on R-Forge) all provide
       functions that read/write ANALYZE and NIfTI files.</li>
@@ -84,9 +84,14 @@
     </ul>
     <p><em>Dynamic Contrast-Enhanced MRI (DCE-MRI)</em></p>
     <ul>
-      <li>The <pkg>dcemri</pkg> package contains a collection of
+      <li>The <pkg>dcemriS4</pkg> package contains a collection of
       functions to perform quantitative analysis from a DCE-MRI
-      acquisition on a voxel-by-voxel basis.  The steps involved are:
+      (or diffusion-weighted MRI) acquisition on a voxel-by-voxel basis 
+      and depends on the S4 implementation of the NIfTI and ANALYZE
+      classes in <pkg>oro.nifti</pkg>.  Data management capabilities 
+      include: read/write for NIfTI extensions, full audit trail, 
+      improved visualization, etc. 
+       The steps to quantify DCE-MRI are as follows:
       motion correction and/or co-registration, T1 estimation,
       conversion of signal intensity to gadolinium contrast-agent
       concentration and kinetic parameter estimation.  Parametric
@@ -95,11 +100,6 @@
       Levenburg-Marquardt optimization or Bayesian estimation.
       Semi-parametric estimation of the kinetic parameters is also
       possible via Bayesian P-splines.</li>
-      <li>The <pkg>dcemriS4</pkg> is an S4 implementation of
-      <pkg>dcemri</pkg> with additional capabilities including:
-      read/write for NIfTI extensions, full audit trail, improved
-      visualization, etc.  It is recommended that one uses 
-      <pkg>dcemriS4</pkg> instead of dcemri.</li>
     </ul>
     <p><em>Functional Connectivity</em></p>
     <ul>
@@ -180,6 +180,9 @@
       microscopy-based cellular assays, this package offers tools to
       transform the images, segment cells and extract quantitative
       cellular descriptors.</li>
+      <li>The <pkg>RNiftyReg</pkg> provides an interface to the 
+      <a href="http://sourceforge.net/projects/niftyreg/">NiftyReg</a>
+      image registration tools.</li>
     </ul>
     <p><strong>Positron Emission Tomography (PET)</strong></p>
     <ul>
@@ -216,7 +219,6 @@
     <pkg priority="core">adimpro</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
     <pkg>cudaBayesreg</pkg>
-    <pkg priority="core">dcemri</pkg>
     <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">dpmixsim</pkg>
     <pkg priority="core">dti</pkg>
@@ -227,6 +229,7 @@
     <pkg priority="core">PET</pkg>
     <pkg>PTAk</pkg>
     <pkg priority="core">Rniftilib</pkg>
+    <pkg priority="core">RNiftyReg</pkg>
     <pkg priority="core">tractor.base</pkg>
   </packagelist>
 
