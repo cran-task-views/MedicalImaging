@@ -84,7 +84,13 @@
     </ul>
     <p><em>Dynamic Contrast-Enhanced MRI (DCE-MRI)</em></p>
     <ul>
-    <li>The \pkg{DATforDCEMRI} package performs voxel-wise deconvolution analysis of contrast agent concentration versus time data and generates the impulse response function (IRF), which may be used to approximate commonly utilized kinetic parameters such as Ktrans and Ve.  An interactive advanced voxel diagnosis tool (AVDT) is also provided to facilitate easy navigation of the voxel-wise data.</li>
+      <li>The <pkg>DATforDCEMRI</pkg> package performs voxel-wise
+      deconvolution analysis of contrast agent concentration versus
+      time data and generates the impulse response function (IRF),
+      which may be used to approximate commonly utilized kinetic
+      parameters such as Ktrans and Ve.  An interactive advanced
+      voxel diagnosis tool (AVDT) is also provided to facilitate
+      easy navigation of the voxel-wise data.</li>
       <li>The <pkg>dcemriS4</pkg> package contains a collection of
       functions to perform quantitative analysis from a DCE-MRI (or
       diffusion-weighted MRI) acquisition on a voxel-by-voxel basis
@@ -128,7 +134,10 @@
       cross-platform visualization based on Tcl/Tk components, and
       spatial/temporal ICA (<a href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent Components Analysis</a>) 
       via a graphical user interface (GUI).</li>
-      <li>The package \pkg{arf3DS4} applied the active region fitting (ARF) algorithm for the analysis of functional magnetic resonance imaging (fMRI) data.  ARF uses Gaussian shape spatial models to parameterize active brain regions.</li>
+      <li>The package <pkg>arf3DS4</pkg> applied the active region
+      fitting (ARF) algorithm for the analysis of functional magnetic
+      resonance imaging (fMRI) data.  ARF uses Gaussian shape spatial
+      models to parameterize active brain regions.</li>
       <li>The R-package <pkg>fmri</pkg> provides tools for the
       analysis of functional MRI data.  The core is the implementation
       of a new class of adaptive smoothing methods.  These methods
@@ -160,7 +169,12 @@
       <a href="http://dx.doi.org/10.1002/0470863692">Bayesian
       Statistics and Marketing</a>, Chapter 3, and is referred to as
       "rhierLinearModel" in the R-package <pkg>bayesm</pkg>.</li>
-      <li>The \pkg{neuRosim} package allows users to generate functional MRI time series or four-dimensional data.  Some high-level functions are created for fast data generation with only a few arguments and a diversity of functions to define activation and noise characteristics.  For more advanced users it is possible to use the low-level functions and manipulate the arguments.</li>
+      <li>The <pkg>neuRosim</pkg> package allows users to generate
+      functional MRI time series or four-dimensional data.  Some
+      high-level functions are created for fast data generation with
+      only a few arguments and a diversity of functions to define
+      activation and noise characteristics.  For more advanced users
+      it is possible to use the low-level functions and manipulate the arguments.</li>
     </ul>
     <p><em>Structural MRI</em></p>
     <ul>
@@ -180,12 +194,17 @@
       cellular descriptors.</li>
       <li>The <pkg>RNiftyReg</pkg> provides an interface to the 
       <a href="http://sourceforge.net/projects/niftyreg/">NiftyReg</a>
-      image registration tools.  Rigid-body, affine and non-linear registrations are available and may be applied in 2D-to-2D, 3D-to-2D and 4D-to-3D procedures.</li>
+      image registration tools.  Rigid-body, affine and non-linear
+      registrations are available and may be applied in 2D-to-2D, 3D-to-2D and 4D-to-3D procedures.</li>
     </ul>
     <p><strong>Positron Emission Tomography (PET)</strong></p>
     <ul>
-    <li>
-	The \pkg{occ} package provides a generic function for estimating PET neuro-receptor occupancies by a drug, from the total volumes of distribution of a set of regions of interest (ROI).  Fittings methods include the reference region, the <em>ordinary least squares<\em> (OLS, sometimes known as "occupancy plot") and the <em>restricted maximum likelihood estimation<\em> (REML).</li>
+      <li>The <pkg>occ</pkg> package provides a generic function for
+      estimating PET neuro-receptor occupancies by a drug, from the total
+      volumes of distribution of a set of regions of interest (ROI).
+      Fittings methods include the reference region, the <em>ordinary least squares</em>
+      (OLS, sometimes known as "occupancy plot") and the
+      <em>restricted maximum likelihood estimation</em> (REML).</li>
       <li>The <pkg>PET</pkg> package contains three of the major
       iterative reconstruction techniques (Algebraic Reconstruction
       Technique, Likelihood Reconstruction using Expectation
@@ -242,5 +261,6 @@
     <bioc>EBImage</bioc>
     <rforge>eeg</rforge>
     <rforge>neuroim</rforge>
+    <a href="http://www.jstatsoft.org/v44/">Journal of Statistical Software: Special Volume on Magnetic Resonance Imaging in R</a>
   </links>
 </CRANTaskView>
