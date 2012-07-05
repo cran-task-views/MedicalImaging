@@ -1,8 +1,8 @@
 <CRANTaskView>
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
-  <maintainer email = "b.whitcher@imperial.ac.uk">Brandon Whitcher</maintainer>
-  <version>2012-03-30</version>
+  <maintainer email = "bwhitcher@mango-solutions.com">Brandon Whitcher</maintainer>
+  <version>2012-07-05</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -174,12 +174,30 @@
       high-level functions are created for fast data generation with
       only a few arguments and a diversity of functions to define
       activation and noise characteristics.  For more advanced users
-      it is possible to use the low-level functions and manipulate the arguments.</li>
+      it is possible to use the low-level functions and manipulate the
+      arguments.</li>
     </ul>
     <p><em>Structural MRI</em></p>
     <ul>
-      <li>The package <pkg>dpmixsim</pkg> implements a Dirichlet Process Mixture (DPM) model for clustering and image segmentation.  The DPM model is a Bayesian nonparametric methodology that relies on MCMC simulations for exploring mixture models with an unknown number of components.  The code implements conjugate models with normal structure (conjugate normal-normal DPM model).  Applications are oriented towards the classification of MR images according to tissue type or region of interest.</li>
-      <li>The package <pkg>mritc</pkg> provides tools for MRI tissue classification using normal mixture models and (partial volume, higher resolution) hidden Markov normal mixture models fitted by various methods.  Functions to obtain initial values and spatial parameters are available.  Facilities for visualization and evaluation of classification results are provided.  To improve the speed, table lookup methods are used in various places, vectorization is used to take advantage of conditional independence, and some computations are performed by embedded C code.</li>
+      <li>The package <pkg>dpmixsim</pkg> implements a Dirichlet
+      Process Mixture (DPM) model for clustering and image
+      segmentation.  The DPM model is a Bayesian nonparametric
+      methodology that relies on MCMC simulations for exploring
+      mixture models with an unknown number of components.  The code
+      implements conjugate models with normal structure (conjugate
+      normal-normal DPM model).  Applications are oriented towards the
+      classification of MR images according to tissue type or region
+      of interest.</li>
+      <li>The package <pkg>mritc</pkg> provides tools for MRI tissue
+      classification using normal mixture models and (partial volume,
+      higher resolution) hidden Markov normal mixture models fitted by
+      various methods.  Functions to obtain initial values and spatial
+      parameters are available.  Facilities for visualization and
+      evaluation of classification results are provided.  To improve
+      the speed, table lookup methods are used in various places,
+      vectorization is used to take advantage of conditional
+      independence, and some computations are performed by embedded C
+      code.</li>
     </ul>
     <p><strong>General Image Processing</strong></p>
     <ul>
@@ -192,19 +210,26 @@
       microscopy-based cellular assays, this package offers tools to
       transform the images, segment cells and extract quantitative
       cellular descriptors.</li>
-      <li>The <pkg>RNiftyReg</pkg> provides an interface to the 
-      <a href="http://sourceforge.net/projects/niftyreg/">NiftyReg</a>
+      <li>The package <pkg>mmand</pkg> (Mathematical Morphology in Any
+      Number of Dimensions) provides morphological operations like
+      erode and dilate, opening and closing, as well as smoothing and
+      kernel-based image processing.  It operates on arrays or 
+      array-like data of arbitrary dimension.</li>
+      <li>The <pkg>RNiftyReg</pkg> provides an interface to the <a
+      href="http://sourceforge.net/projects/niftyreg/">NiftyReg</a>
       image registration tools.  Rigid-body, affine and non-linear
-      registrations are available and may be applied in 2D-to-2D, 3D-to-2D and 4D-to-3D procedures.</li>
+      registrations are available and may be applied in 2D-to-2D,
+      3D-to-2D and 4D-to-3D procedures.</li>
     </ul>
     <p><strong>Positron Emission Tomography (PET)</strong></p>
     <ul>
       <li>The <pkg>occ</pkg> package provides a generic function for
-      estimating PET neuro-receptor occupancies by a drug, from the total
-      volumes of distribution of a set of regions of interest (ROI).
-      Fittings methods include the reference region, the <em>ordinary least squares</em>
-      (OLS, sometimes known as "occupancy plot") and the
-      <em>restricted maximum likelihood estimation</em> (REML).</li>
+      estimating PET neuro-receptor occupancies by a drug, from the
+      total volumes of distribution of a set of regions of interest
+      (ROI).  Fittings methods include the reference region, the
+      <em>ordinary least squares</em> (OLS, sometimes known as
+      "occupancy plot") and the <em>restricted maximum likelihood
+      estimation</em> (REML).</li>
       <li>The <pkg>PET</pkg> package contains three of the major
       iterative reconstruction techniques (Algebraic Reconstruction
       Technique, Likelihood Reconstruction using Expectation
@@ -244,6 +269,7 @@
     <pkg priority="core">dpmixsim</pkg>
     <pkg priority="core">dti</pkg>
     <pkg priority="core">fmri</pkg>
+    <pkg priority="core">mmand</pkg>
     <pkg priority="core">mritc</pkg>
     <pkg priority="core">neuRosim</pkg>
     <pkg priority="core">occ</pkg>
