@@ -73,14 +73,16 @@
       tracts).  The package also provides functions for DTI data
       processing from input, via tensor reconstruction to
       visualization (2D and 3D).</li>
-      <li>The <pkg>tractor.base</pkg> package (part of the
-      <gcode>tractor</gcode> project) consists of functions for
-      reading, writing and visualising MRI images.  Images may be
-      stored in ANALYZE, NIfTI or DICOM file formats, and can be
-      visualised slice-by-slice or in projection.  It also provides
-      functions for common image manipulation tasks, such as masking
-      and thresholding; and for applying arbitrary functions to image
-      data.  The package is written in pure R.</li>
+
+      <li>The <pkg>tractor.base</pkg> package (part of the <a
+      href="http://www.tractor-mri.org.uk/">tractor project</a>)
+      consists of functions for reading, writing and visualising MRI
+      images.  Images may be stored in ANALYZE, NIfTI or DICOM file
+      formats, and can be visualised slice-by-slice or in projection.
+      It also provides functions for common image manipulation tasks,
+      such as masking and thresholding; and for applying arbitrary
+      functions to image data.  The package is written in pure R.</li>
+
     </ul>
     <p><em>Dynamic Contrast-Enhanced MRI (DCE-MRI)</em></p>
     <ul>
