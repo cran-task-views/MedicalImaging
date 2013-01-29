@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@mango-solutions.com">Brandon Whitcher</maintainer>
-  <version>2012-07-05</version>
+  <version>2013-01-29</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -51,11 +51,11 @@
       functions that read/write ANALYZE and NIfTI files.</li>
       <li>The <pkg>Rniftilib</pkg> package provides read/write
       capabilities for the NIfTI-1 format.  The <pkg>Rniftilib</pkg>
-      package provides a R-interface to the C reference library
+      package provides a R interface to the C reference library
       provided by the <a
       href="http://sourceforge.net/projects/niftilib/">Neuroimaging
       Informatics Technology Initiative</a>.  In contrast to other
-      R-packages supporting the ANALYZE and NIfTI-1 format, this
+      R packages supporting the ANALYZE and NIfTI-1 format, this
       package comes without additional functions for data processing
       and is restricted to functions for data handling as provided by
       the C reference library.  The aim of the package is to serve as
@@ -65,7 +65,7 @@
     <p><strong>Magnetic Resonance Imaging (MRI)</strong></p>
     <p><em>Diffusion Tensor Imaging (DTI)</em></p>
     <ul>
-      <li>The R-package <pkg>dti</pkg> provides structural adaptive
+      <li>The R package <pkg>dti</pkg> provides structural adaptive
       smoothing methods for the analysis of diffusion weighted data in
       the context of the DTI model.  Due to its edge preserving
       properties these smoothing methods are capable of reducing noise
@@ -140,7 +140,7 @@
       fitting (ARF) algorithm for the analysis of functional magnetic
       resonance imaging (fMRI) data.  ARF uses Gaussian shape spatial
       models to parameterize active brain regions.</li>
-      <li>The R-package <pkg>fmri</pkg> provides tools for the
+      <li>The R package <pkg>fmri</pkg> provides tools for the
       analysis of functional MRI data.  The core is the implementation
       of a new class of adaptive smoothing methods.  These methods
       allow for a significant signal enhancement and reduction of
@@ -170,7 +170,7 @@
       This model has been proposed by Rossi, Allenby and McCulloch in
       <a href="http://dx.doi.org/10.1002/0470863692">Bayesian
       Statistics and Marketing</a>, Chapter 3, and is referred to as
-      "rhierLinearModel" in the R-package <pkg>bayesm</pkg>.</li>
+      "rhierLinearModel" in the R package <pkg>bayesm</pkg>.</li>
       <li>The <pkg>neuRosim</pkg> package allows users to generate
       functional MRI time series or four-dimensional data.  Some
       high-level functions are created for fast data generation with
@@ -265,6 +265,8 @@
     <pkg priority="core">adimpro</pkg>
     <pkg priority="core">arf3DS4</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
+    <pkg>bayesm</pkg>
+    <pkg>brainwaver</pkg>
     <pkg>cudaBayesreg</pkg>
     <pkg priority="core">DATforDCEMRI</pkg>
     <pkg priority="core">dcemriS4</pkg>
@@ -282,6 +284,7 @@
     <pkg priority="core">Rniftilib</pkg>
     <pkg priority="core">RNiftyReg</pkg>
     <pkg priority="core">tractor.base</pkg>
+    <pkg>waveslim</pkg>
   </packagelist>
 
   <links>
