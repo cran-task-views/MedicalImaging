@@ -131,7 +131,7 @@
       small-world theory and, with efficient computation techniques,
       tested using simulated attacks.  The brainwaver project is
       complementary to the <a
-      href="http://www-bmu.psychiatry.cam.ac.uk/software">CamBA</a>
+      href="http://sourceforge.net/projects/camba/">CamBA</a>
       project for brain image data processing.  A collection of
       scripts (with a makefile) is available to <a
       href="http://www.gipsa-lab.inpg.fr/~sophie.achard/brainwaver">download</a>
