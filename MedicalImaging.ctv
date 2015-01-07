@@ -27,7 +27,7 @@
     <p>Although the industry standard for medical imaging data is
     DICOM, another format has come to be heavily used in the image
     analysis community.  The <a
-    href="http://www.mayo.edu/bir/PDF/ANALYZE75.pdf">ANALYZE</a>
+    href="http://www.mayo.edu/research/labs/biomedical-imaging/software/analyze-software-system">ANALYZE</a>
     format was originally developed in conjunction with an image
     processing system (of the same name) at the Mayo Foundation.  An
     Anlayze (7.5) format image is comprised of two files, the "hdr"
