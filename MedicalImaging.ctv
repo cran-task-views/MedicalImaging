@@ -43,12 +43,12 @@
     fixed header into more relevant categories and the possibility of
     extending the header information.</p>
     <ul>
+
       <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
-      project), <pkg>oro.nifti</pkg> and
-      NeuroImage (currently only available within the
-      <rforge>neuroim</rforge> project on R-Forge) all provide
-      functions that read/write ANALYZE and NIfTI files.</li>
+      project), <pkg>oro.nifti</pkg> and <pkg>neuroim</pkg> all
+      provide functions that read/write ANALYZE and NIfTI files.</li>
+
     </ul>
     <p><strong>Magnetic Resonance Imaging (MRI)</strong></p>
     <p><em>Diffusion Tensor Imaging (DTI)</em></p>
@@ -199,6 +199,15 @@
     WebGL, RGL, and JavaScript commands.  This package relies on the X
     ToolKit (<a href="https://github.com/xtk/X#readme">XTK</a>).</li>
     </ul>
+    <p><em>Simulation</em></p>
+    <ul>
+    <li>The package <pkg>neuRosim</pkg>allows users to generate fMRI
+    time series or 4D data. Some high-level functions are created for
+    fast data generation with only a few arguments and a diversity of
+    functions to define activation and noise. For more advanced users
+    it is possible to use the low-level functions and manipulate the
+    arguments.</li>
+    </ul>
     <p><strong>General Image Processing</strong></p>
     <ul>
       <li><pkg>adimpro</pkg> is a package for 2D digital (color and
@@ -275,6 +284,8 @@
     <pkg priority="core">gdimap</pkg>
     <pkg priority="core">mmand</pkg>
     <pkg priority="core">mritc</pkg>
+    <pkg priority="core">neuroim</pkg>
+    <pkg priority="core">neuRosim</pkg>
     <pkg priority="core">occ</pkg>
     <pkg priority="core">oro.dicom</pkg>
     <pkg priority="core">oro.nifti</pkg>
@@ -289,7 +300,19 @@
     <view>ChemPhys</view>
     <bioc>EBImage</bioc>
     <rforge>eeg</rforge>
-    <rforge>neuroim</rforge>
     <a href="http://www.jstatsoft.org">Journal of Statistical Software</a>: <a href="http:://www.jstatsoft.org/v44/">Special Volume on Magnetic Resonance Imaging in R</a>
+    <a href="http://picsl.upenn.edu/antsr">ANTsR</a> is a framework
+    that incorporates ITK and ANTs-based image processing methods into
+    the R programming language.
+    <a href="http://www.simpleitk.org/">SimpleITK</a> is a simplified
+    layer built on top of <a href="http://www.itk.org">ITK</a>,
+    intended to facilitate its use in rapid prototyping, education,
+    interpreted languages. SimpleITK provides support for 2D and 3D
+    images, and a selected set of pixel types for them. Different
+    image filters may support a different collection of pixel types,
+    in many cases due to computational requirements. The library is
+    wrapped for interpreted languages by using SWIG. In particular,
+    the following wrappings are available: Python, Java, Tcl, Lua, R
+    and Ruby.
   </links>
 </CRANTaskView>
