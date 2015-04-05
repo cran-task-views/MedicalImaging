@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2015-01-10</version>
+  <version>2015-04-05</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -191,6 +191,13 @@
       vectorization is used to take advantage of conditional
       independence, and some computations are performed by embedded C
       code.</li>
+    </ul>
+    <p><em>Visualization</em></p>
+    <ul>
+    <li>The package <pkg>brainR</pkg> includes functions for creating
+    three-dimensinoal (3D) and four-dimensional (4D) images using
+    WebGL, RGL, and JavaScript commands.  This package relies on the X
+    ToolKit (<a href="https://github.com/xtk/X#readme">XTK</a>).</li>
     </ul>
     <p><strong>General Image Processing</strong></p>
     <ul>
