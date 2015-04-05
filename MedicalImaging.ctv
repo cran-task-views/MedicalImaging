@@ -264,6 +264,7 @@
     <pkg priority="core">arf3DS4</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
     <pkg>bayesm</pkg>
+    <pkg>brainR</pkg>
     <pkg>brainwaver</pkg>
     <pkg>cudaBayesreg</pkg>
     <pkg priority="core">DATforDCEMRI</pkg>
@@ -277,7 +278,7 @@
     <pkg priority="core">occ</pkg>
     <pkg priority="core">oro.dicom</pkg>
     <pkg priority="core">oro.nifti</pkg>
-    <pkg priority="core">PET</pkg>
+    <pkg>PET</pkg>
     <pkg>PTAk</pkg>
     <pkg priority="core">RNiftyReg</pkg>
     <pkg priority="core">tractor.base</pkg>
@@ -289,6 +290,6 @@
     <bioc>EBImage</bioc>
     <rforge>eeg</rforge>
     <rforge>neuroim</rforge>
-    <a href="http://www.jstatsoft.org/v44/">Journal of Statistical Software: Special Volume on Magnetic Resonance Imaging in R</a>
+    <a href="http://www.jstatsoft.org">Journal of Statistical Software</a>: <a href="http:://www.jstatsoft.org/v44/">Special Volume on Magnetic Resonance Imaging in R</a>
   </links>
 </CRANTaskView>
