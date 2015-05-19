@@ -97,6 +97,7 @@
       parameters such as Ktrans and Ve.  An interactive advanced
       voxel diagnosis tool (AVDT) is also provided to facilitate
       easy navigation of the voxel-wise data.</li>
+
       <li>The <pkg>dcemriS4</pkg> package contains a collection of
       functions to perform quantitative analysis from a DCE-MRI (or
       diffusion-weighted MRI) acquisition on a voxel-by-voxel basis
@@ -112,6 +113,14 @@
       via Levenburg-Marquardt optimization or Bayesian estimation.
       Semi-parametric estimation of the kinetic parameters is also
       possible via Bayesian P-splines.</li>
+
+      <li>The <pkg>KATforDCEMRI</pkg> package contains functions for
+      fitting compartmental models to voxel-wise contrast agent
+      concentration versus time data in order to estimate commonly
+      utilized kinetic parameters such as Ktrans and Ve. An
+      interactive advanced voxel diagnosis tool (AVDT) is also
+      provided to facilitate easy navigation of the voxel-wise data
+      and per-voxel fitted model parameters.</li>
 
     </ul>
     <p><em>Functional Connectivity</em></p>
@@ -313,6 +322,7 @@
     <pkg priority="core">fmri</pkg>
     <pkg>fslr</pkg>
     <pkg priority="core">gdimap</pkg>
+    <pkg priority="core">KATforDCEMRI</pkg>
     <pkg priority="core">mmand</pkg>
     <pkg>MRIaggr</pkg>
     <pkg priority="core">mritc</pkg>
