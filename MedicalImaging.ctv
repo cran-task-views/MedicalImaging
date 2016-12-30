@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2016-08-16</version>
+  <version>2016-12-30</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -18,7 +18,7 @@
     (group,element) tag should be the "data" tag (7FE0,0010), such
     that all subsequent information is related to the image(s).</p>
     <ul>
-      <li>The packages <pkg>oro.dicom</pkg>, <pkg>fmri</pkg> and
+      <li>The packages <pkg>oro.dicom</pkg>, <pkg>divest</pkg>, <pkg>fmri</pkg> and
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
       project) provide R functions that read DICOM files and
       facilitate their conversion to ANALYZE or NIfTI format.</li>
@@ -44,7 +44,7 @@
     extending the header information.</p>
     <ul>
 
-      <li>The packages <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
+      <li>The packages <pkg>RNifti</pkg>, <pkg>AnalyzeFMRI</pkg>, <pkg>fmri</pkg>,
       <pkg>tractor.base</pkg> (part of the <gcode>tractor</gcode>
       project), <pkg>oro.nifti</pkg>, and <pkg>neuroim</pkg> all
       provide functions that read/write ANALYZE and NIfTI files.</li>
@@ -144,12 +144,13 @@
     </ul>
     <p><em>Functional MRI</em></p>
     <ul>
+      <li><pkg>adaptsmoFMRI</pkg> contains R functions for estimating the blood oxygenation level dependent (BOLD) effect by using functional magnetic resonance imaging (fMRI) data, based on adaptive Gauss Markov random fields, for real as well as simulated data.  Inference of the underlying models is performed by efficient Markov Chain Monte Carlo simulation, with the Metropolis Hastings algorithm for the non-approximate case and the Gibbs sampler for the approximate case.  When comparing the results of approximate to the non-approximate version the outcome is in favour of the former, as the gain of accuracy in estimation, when not approximating, is minimal and the computational burden becomes less cumbersome.</li>
       <li><pkg>AnalyzeFMRI</pkg> is a package originally written for
       the processing and analysis of large structural and functional
       MRI data sets under the ANALYZE format.  It has been updated to
       include new functionality: complete NIfTI input/output,
       cross-platform visualization based on Tcl/Tk components, and
-      spatial/temporal ICA (<a href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent Components Analysis</a>) 
+      spatial/temporal ICA (<a href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent Components Analysis</a>)
       via a graphical user interface (GUI).</li>
       <li>The package <pkg>arf3DS4</pkg> applied the active region
       fitting (ARF) algorithm for the analysis of functional magnetic
@@ -165,7 +166,7 @@
       analysis of high-resolution functional MRI.  The package
       includes functions for input/output of some standard imaging
       formats (ANALYZE, NIfTI, AFNI, DICOM) as well as for linear
-      modelling the data and signal detection using <a href="http://imaging.mrc-cbu.cam.ac.uk/imaging/PrinciplesRandomFields">Random Field Theory</a>.  
+      modelling the data and signal detection using <a href="http://imaging.mrc-cbu.cam.ac.uk/imaging/PrinciplesRandomFields">Random Field Theory</a>.
       It also includes ICA and NGCA (non-Gaussian Components Analysis)
       based methods and hence has some overlap with
       <pkg>AnalyzeFMRI</pkg>.</li>
@@ -215,10 +216,12 @@
       three-dimensinoal (3D) and four-dimensional (4D) images using
       WebGL, RGL, and JavaScript commands.  This package relies on the X
       ToolKit (<a href="https://github.com/xtk/X#readme">XTK</a>).</li>
+      <li><pkg>Morpho</pkg> is a collection of tools for statistical shape analysis and visualization of point based shape representations (landmarks, meshes).  Apart from the core functions such as General Procrustes Analysis and sliding of semi-landmarks, <pkg>Morpho</pkg> is sporting a variety of statistical procedures to assess group differences and asymmetry, most of them based on permutation/bootstrapping methods.  For registration purposes there are functions to calculate landmark transforms (rigid, similarity, affine and thin-plate spline) as well as iterative closest point registration and automated alignment exploiting the shapes' principal axes.  To deal with missing/erroneous data there are imputation methods available for missing landmarks and interactive outlier detection.  For visualization there are functions to create interactive 3D plots of distance maps as well as visualizing differences between point clouds by deforming rectangular grids, both in 2D and 3D.  Additionally, it includes an algorithm to retrodeform surface meshes representing structures that have suffered a series of locally affine deformations (e.g. fossils).</li>
+      <li><pkg>Rvcg</pkg> interfaces <a href="http://vcg.sourceforge.net">VCGLIB</a> to provide functions for manipulating triangular surface meshes; e.g., surfaces generated from medical image segmentations.  Among those manipulations are quadric-edge collapse decimation, smoothing, subsampling, closest point search or uniform remeshing.  Additionally it allows the generation of isosurfaces from 3D arrays.  It has capabilities for import/export of STL, PLY and OBJ files, both in binary and ASCII format.</li>
     </ul>
     <p><em>Simulation</em></p>
     <ul>
-      <li>The package <pkg>neuRosim</pkg>allows users to generate fMRI
+      <li>The package <pkg>neuRosim</pkg> allows users to generate fMRI
       time series or 4D data. Some high-level functions are created for
       fast data generation with only a few arguments and a diversity of
       functions to define activation and noise. For more advanced users
@@ -227,30 +230,26 @@
     </ul>
     <p><strong>General Image Processing</strong></p>
     <ul>
-
       <li><pkg>adimpro</pkg> is a package for 2D digital (color and
       B/W) images, actually not specific to medical imaging, but for
       general image processing.</li>
-
+      <li>The package <pkg>bayesImageS</pkg> implements several algorithms for segmentation of 2D and 3D images (such as CT and MRI).  It provides full Bayesian inference for hidden Markov normal mixture models, including the posterior distribution for the smoothing parameter.  The pixel labels can be sampled using checkerboard Gibbs or Swendsen-Wang.  MCMC algorithms for the smoothing parameter include the approximate exchange algorithm (AEA), pseudolikelihood (PL), thermodynamic integration (TI), and approximate Bayesian computation (ABC-MCMC and ABC-SMC).  An external field prior can be used when an anatomical atlas or other spatial information is available.</li>
       <li><bioc>EBImage</bioc>is an R package which provides general
       purpose functionality for the reading, writing, processing and
       analysis of images.  Furthermore, in the context of
       microscopy-based cellular assays, this package offers tools to
       transform the images, segment cells and extract quantitative
       cellular descriptors.</li>
-
       <li>The package <pkg>mmand</pkg> (Mathematical Morphology in Any
       Number of Dimensions) provides morphological operations like
       erode and dilate, opening and closing, as well as smoothing and
-      kernel-based image processing.  It operates on arrays or 
+      kernel-based image processing.  It operates on arrays or
       array-like data of arbitrary dimension.</li>
-
       <li>The <pkg>RNiftyReg</pkg> provides an interface to the <a
       href="http://sourceforge.net/projects/niftyreg/">NiftyReg</a>
       image registration tools.  Rigid-body, affine and non-linear
       registrations are available and may be applied in 2D-to-2D,
       3D-to-2D and 4D-to-3D procedures.</li>
-
       <li>The package <pkg>fslr</pkg> contains wrapper functions that
       interface with the <a
       href="http://fsl.fmrib.ox.ac.uk/fsl/fslwiki">FMRIB Sofware
@@ -259,7 +258,6 @@
       package is to interface with FSL completely in R, where you pass
       R-based NIfTI objects and the function executes an FSL command
       and returns an R-based NIfTI object.</li>
-
     </ul>
     <p><strong>Positron Emission Tomography (PET)</strong></p>
     <ul>
@@ -277,9 +275,10 @@
       direct reconstruction methods for radon transformed data.
       Furthermore, it offers the possibility to simulate a marked
       Poisson process with spatial varying intensity.</li>
-    </ul>    
+    </ul>
     <p><strong>Electroencephalography (EEG)</strong></p>
     <ul>
+      <li><pkg>edfReader</pkg> reads some of the most popular file formats in EEG recordings.</li>
       <li>The EEG package (currently only available within the
       <rforge>eeg</rforge> project on R-Forge) reads in single trial
       EEG (currently only ascii-exported pre-processed and trial
@@ -288,6 +287,7 @@
       multiple data sets in a <tt>data.frame</tt> like object, such
       that statistical analysis (linear model, (M)ANOVA) can be done
       using the familiar R modeling frame work.</li>
+      <li><pkg>eegkit</pkg> includes many useful functions for analysing EEG signals (among others, visualizing positions of electrodes).</li>
       <li><pkg>PTAk</pkg> is an R package that uses a multiway method
       to decompose a tensor (array) of any order, as a generalisation
       of a singular value decomposition (SVD) also supporting
@@ -296,7 +296,7 @@
       additional multiway methods: PCAn (Tucker-n) and
       PARAFAC/CANDECOMP with these extensions.  Applications include
       the analysis of EEG and functional MRI data.</li>
-    </ul>    
+    </ul>
   </info>
 
   <packagelist>
@@ -309,13 +309,17 @@
     <pkg>cudaBayesreg</pkg>
     <pkg priority="core">DATforDCEMRI</pkg>
     <pkg priority="core">dcemriS4</pkg>
+    <pkg priority="core">divest</pkg>
     <pkg priority="core">dpmixsim</pkg>
     <pkg priority="core">dti</pkg>
+    <pkg priority="core">edfReader</pkg>
+    <pkg priority="core">eegkit</pkg>
     <pkg priority="core">fmri</pkg>
     <pkg>fslr</pkg>
     <pkg priority="core">gdimap</pkg>
     <pkg priority="core">KATforDCEMRI</pkg>
     <pkg priority="core">mmand</pkg>
+    <pkg priority="core">Morpho</pkg>
     <pkg priority="core">mritc</pkg>
     <pkg priority="core">neuroim</pkg>
     <pkg priority="core">neuRosim</pkg>
@@ -324,6 +328,8 @@
     <pkg priority="core">oro.nifti</pkg>
     <pkg>PET</pkg>
     <pkg>PTAk</pkg>
+    <pkg priority="core">Rvcg</pkg>
+    <pkg priority="core">RNifti</pkg>
     <pkg priority="core">RNiftyReg</pkg>
     <pkg priority="core">tractor.base</pkg>
     <pkg>waveslim</pkg>
