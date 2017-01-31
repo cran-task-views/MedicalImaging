@@ -300,9 +300,11 @@
   </info>
 
   <packagelist>
+    <pkg>adaptsmoFMRI</pkg>
     <pkg priority="core">adimpro</pkg>
     <pkg priority="core">arf3DS4</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
+    <pkg>bayesImageS</pkg>
     <pkg>bayesm</pkg>
     <pkg>brainR</pkg>
     <pkg>brainwaver</pkg>
