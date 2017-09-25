@@ -212,7 +212,7 @@
     <p><em>Visualization</em></p>
     <ul>
       <li>The package <pkg>brainR</pkg> includes functions for creating
-      three-dimensinoal (3D) and four-dimensional (4D) images using
+      three-dimensional (3D) and four-dimensional (4D) images using
       WebGL, RGL, and JavaScript commands.  This package relies on the X
       ToolKit (<a href="https://github.com/xtk/X#readme">XTK</a>).</li>
       <li><pkg>Morpho</pkg> is a collection of tools for statistical shape analysis and visualization of point based shape representations (landmarks, meshes).  Apart from the core functions such as General Procrustes Analysis and sliding of semi-landmarks, <pkg>Morpho</pkg> is sporting a variety of statistical procedures to assess group differences and asymmetry, most of them based on permutation/bootstrapping methods.  For registration purposes there are functions to calculate landmark transforms (rigid, similarity, affine and thin-plate spline) as well as iterative closest point registration and automated alignment exploiting the shapes' principal axes.  To deal with missing/erroneous data there are imputation methods available for missing landmarks and interactive outlier detection.  For visualization there are functions to create interactive 3D plots of distance maps as well as visualizing differences between point clouds by deforming rectangular grids, both in 2D and 3D.  Additionally, it includes an algorithm to retrodeform surface meshes representing structures that have suffered a series of locally affine deformations (e.g. fossils).</li>
