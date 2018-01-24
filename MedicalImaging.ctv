@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2016-12-30</version>
+  <version>2018-01-24</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -111,14 +111,6 @@
       via Levenburg-Marquardt optimization or Bayesian estimation.
       Semi-parametric estimation of the kinetic parameters is also
       possible via Bayesian P-splines.</li>
-
-      <li>The <pkg>KATforDCEMRI</pkg> package contains functions for
-      fitting compartmental models to voxel-wise contrast agent
-      concentration versus time data in order to estimate commonly
-      utilized kinetic parameters such as Ktrans and Ve. An
-      interactive advanced voxel diagnosis tool (AVDT) is also
-      provided to facilitate easy navigation of the voxel-wise data
-      and per-voxel fitted model parameters.</li>
 
     </ul>
     <p><em>Functional Connectivity</em></p>
@@ -318,7 +310,6 @@
     <pkg priority="core">fmri</pkg>
     <pkg>fslr</pkg>
     <pkg priority="core">gdimap</pkg>
-    <pkg priority="core">KATforDCEMRI</pkg>
     <pkg priority="core">mmand</pkg>
     <pkg priority="core">Morpho</pkg>
     <pkg priority="core">mritc</pkg>
