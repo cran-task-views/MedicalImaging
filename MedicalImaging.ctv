@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2018-01-24</version>
+  <version>2018-11-30</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -166,18 +166,6 @@
       data structures and input/output routines for functional brain
       imaging data.  It reads and writes NIfTI-1 data and provides S4
       classes for handling multi-dimensional images.</li>
-      <li>Compute Unified Device Architecture (CUDA) is a software
-      platform for massively parallel high-performance computing on
-      NVIDIA GPUs. <pkg>cudaBayesreg</pkg> provides a CUDA
-      implementation of a Bayesian multilevel model for the analysis
-      of brain fMRI data.  The CUDA programming model uses a separate
-      thread for fitting a linear regression model at each voxel in
-      parallel.  The global statistical model implements a Gibbs
-      Sampler for hierarchical linear models with a normal prior.
-      This model has been proposed by Rossi, Allenby and McCulloch in
-      <a href="http://dx.doi.org/10.1002/0470863692">Bayesian
-      Statistics and Marketing</a>, Chapter 3, and is referred to as
-      "rhierLinearModel" in the R package <pkg>bayesm</pkg>.</li>
     </ul>
     <p><em>Structural MRI</em></p>
     <ul>
@@ -296,10 +284,8 @@
     <pkg priority="core">arf3DS4</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
     <pkg>bayesImageS</pkg>
-    <pkg>bayesm</pkg>
     <pkg>brainR</pkg>
     <pkg>brainwaver</pkg>
-    <pkg>cudaBayesreg</pkg>
     <pkg priority="core">DATforDCEMRI</pkg>
     <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">divest</pkg>
