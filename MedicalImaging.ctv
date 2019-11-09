@@ -53,15 +53,6 @@
     <p><em>Diffusion Tensor Imaging (DTI)</em></p>
     <ul>
 
-      <li>The R package <pkg>dti</pkg> provides structural adaptive
-      smoothing methods for the analysis of diffusion weighted data in
-      the context of the DTI model.  Due to its edge preserving
-      properties these smoothing methods are capable of reducing noise
-      without compromizing significant structures (e.g., fibre
-      tracts).  The package also provides functions for DTI data
-      processing from input, via tensor reconstruction to
-      visualization (2D and 3D).</li>
-
       <li>The <pkg>tractor.base</pkg> package (part of the <a
       href="http://www.tractor-mri.org.uk/">tractor project</a>)
       consists of functions for reading, writing and visualising MRI
@@ -276,7 +267,6 @@
     <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">divest</pkg>
     <pkg priority="core">dpmixsim</pkg>
-    <pkg priority="core">dti</pkg>
     <pkg priority="core">edfReader</pkg>
     <pkg priority="core">eegkit</pkg>
     <pkg>fslr</pkg>
