@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2020-01-17</version>
+  <version>2020-02-03</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -78,14 +78,6 @@
     </ul>
     <p><em>Dynamic Contrast-Enhanced MRI (DCE-MRI)</em></p>
     <ul>
-
-      <li>The <pkg>DATforDCEMRI</pkg> package performs voxel-wise
-      deconvolution analysis of contrast agent concentration versus
-      time data and generates the impulse response function (IRF),
-      which may be used to approximate commonly utilized kinetic
-      parameters such as Ktrans and Ve.  An interactive advanced
-      voxel diagnosis tool (AVDT) is also provided to facilitate
-      easy navigation of the voxel-wise data.</li>
 
       <li>The <pkg>dcemriS4</pkg> package contains a collection of
       functions to perform quantitative analysis from a DCE-MRI (or
@@ -261,7 +253,6 @@
     <pkg>bayesImageS</pkg>
     <pkg>brainR</pkg>
     <pkg>brainwaver</pkg>
-    <pkg priority="core">DATforDCEMRI</pkg>
     <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">divest</pkg>
     <pkg priority="core">edfReader</pkg>
