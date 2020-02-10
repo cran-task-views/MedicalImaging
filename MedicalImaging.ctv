@@ -280,8 +280,8 @@
     <view>ChemPhys</view>
     <bioc>EBImage</bioc>
     <rforge>eeg</rforge>
-    <a href="http://www.jstatsoft.org/v44/">Journal of Statistical Software>: Special Volume on Magnetic Resonance Imaging in R</a>
-    <a href="http://picsl.upenn.edu/antsr">ANTsR</a> is a framework that incorporates ITK and ANTs-based image processing methods into the R programming language.
-    <a href="http://www.simpleitk.org/">SimpleITK</a> is a simplified layer built on top of <a href="http://www.itk.org">ITK</a>, intended to facilitate its use in rapid prototyping, education, interpreted languages. SimpleITK provides support for 2D and 3D images, and a selected set of pixel types for them. Different image filters may support a different collection of pixel types, in many cases due to computational requirements. The library is wrapped for interpreted languages by using SWIG. In particular, the following wrappings are available: Python, Java, Tcl, Lua, R and Ruby.
+    <a href="http://www.jstatsoft.org/v44/">Journal of Statistical Software: Special Volume on Magnetic Resonance Imaging in R</a>
+    <a href="http://picsl.upenn.edu/antsr">ANTsR is a framework that incorporates ITK and ANTs-based image processing methods into the R programming language.</a>
+    <a href="http://www.simpleitk.org/">SimpleITK is a simplified layer built on top of ITK, intended to facilitate its use in rapid prototyping, education, interpreted languages. SimpleITK provides support for 2D and 3D images, and a selected set of pixel types for them. Different image filters may support a different collection of pixel types, in many cases due to computational requirements. The library is wrapped for interpreted languages by using SWIG. In particular, the following wrappings are available: Python, Java, Tcl, Lua, R and Ruby.</a>
   </links>
 </CRANTaskView>
