@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2020-02-03</version>
+  <version>2020-03-02</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -74,26 +74,6 @@
       orientation has been implemented using (1) by extracting local
       maxima or (2) directional statistical clustering of the ODF
       voxel data.</li>
-
-    </ul>
-    <p><em>Dynamic Contrast-Enhanced MRI (DCE-MRI)</em></p>
-    <ul>
-
-      <li>The <pkg>dcemriS4</pkg> package contains a collection of
-      functions to perform quantitative analysis from a DCE-MRI (or
-      diffusion-weighted MRI) acquisition on a voxel-by-voxel basis
-      and depends on the S4 implementation of the NIfTI and ANALYZE
-      classes in <pkg>oro.nifti</pkg>.  Data management capabilities
-      include: read/write for NIfTI extensions, full audit trail,
-      improved visualization, etc. The steps to quantify DCE-MRI are
-      as follows: motion correction and/or co-registration, T1
-      estimation, conversion of signal intensity to gadolinium
-      contrast-agent concentration and kinetic parameter estimation.
-      Parametric estimation of the kinetic parameters, from a
-      single-compartment (Kety or extended Kety) model, is performed
-      via Levenburg-Marquardt optimization or Bayesian estimation.
-      Semi-parametric estimation of the kinetic parameters is also
-      possible via Bayesian P-splines.</li>
 
     </ul>
     <p><em>Functional Connectivity</em></p>
@@ -253,7 +233,6 @@
     <pkg>bayesImageS</pkg>
     <pkg>brainR</pkg>
     <pkg>brainwaver</pkg>
-    <pkg priority="core">dcemriS4</pkg>
     <pkg priority="core">divest</pkg>
     <pkg priority="core">edfReader</pkg>
     <pkg priority="core">eegkit</pkg>
