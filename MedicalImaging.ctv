@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2020-03-02</version>
+  <version>2020-03-04</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -106,10 +106,6 @@
       cross-platform visualization based on Tcl/Tk components, and
       spatial/temporal ICA (<a href="http://en.wikipedia.org/wiki/Independent_component_analysis">Independent Components Analysis</a>)
       via a graphical user interface (GUI).</li>
-      <li>The package <pkg>arf3DS4</pkg> applied the active region
-      fitting (ARF) algorithm for the analysis of functional magnetic
-      resonance imaging (fMRI) data.  ARF uses Gaussian shape spatial
-      models to parameterize active brain regions.</li>
       <li>The R package <pkg>fmri</pkg> provides tools for the
       analysis of functional MRI data.  The core is the implementation
       of a new class of adaptive smoothing methods.  These methods
@@ -228,7 +224,6 @@
   <packagelist>
     <pkg>adaptsmoFMRI</pkg>
     <pkg priority="core">adimpro</pkg>
-    <pkg priority="core">arf3DS4</pkg>
     <pkg priority="core">AnalyzeFMRI</pkg>
     <pkg>bayesImageS</pkg>
     <pkg>brainR</pkg>
