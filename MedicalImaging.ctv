@@ -2,7 +2,7 @@
   <name>MedicalImaging</name>
   <topic>Medical Image Analysis</topic>
   <maintainer email = "bwhitcher@gmail.com">Brandon Whitcher</maintainer>
-  <version>2020-08-04</version>
+  <version>2020-12-16</version>
   <info>
     <p><strong>Data Input/Output</strong></p>
     <p><em>DICOM</em></p>
@@ -61,19 +61,6 @@
       It also provides functions for common image manipulation tasks,
       such as masking and thresholding; and for applying arbitrary
       functions to image data.  The package is written in pure R.</li>
-
-    </ul>
-    <ul>
-
-      <li> Diffusion anisotropy has been used to characterize white
-      matter neuronal pathways in the human brain, and infer global
-      connectivity in the central nervous system.  The
-      <pkg>gdimap</pkg> package implements algorithms to estimate and
-      visualize the orientation of neuronal pathways using model-free
-      methods (q-space imaging methods). The estimation of fibre
-      orientation has been implemented using (1) by extracting local
-      maxima or (2) directional statistical clustering of the ODF
-      voxel data.</li>
 
     </ul>
     <p><em>Functional MRI</em></p>
@@ -212,7 +199,6 @@
     <pkg priority="core">eegkit</pkg>
     <pkg priority="core">fmri</pkg>
     <pkg>fslr</pkg>
-    <pkg priority="core">gdimap</pkg>
     <pkg priority="core">mmand</pkg>
     <pkg priority="core">Morpho</pkg>
     <pkg priority="core">mritc</pkg>
