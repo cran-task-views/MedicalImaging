@@ -247,6 +247,6 @@ categories and the possibility of extending the header information.
 
 
 ### Links
--   [Journal of Statistical Software: Special Volume on Magnetic Resonance Imaging in R](https://www.jstatsoft.org/v44/)
--   [ANTsR is a framework that incorporates ITK and ANTs-based image processing methods into the R programming language.](http://picsl.upenn.edu/antsr)
--   [SimpleITK is a simplified layer built on top of ITK, intended to facilitate its use in rapid prototyping, education, interpreted languages. SimpleITK provides support for 2D and 3D images, and a selected set of pixel types for them. Different image filters may support a different collection of pixel types, in many cases due to computational requirements. The library is wrapped for interpreted languages by using SWIG. In particular, the following wrappings are available: Python, Java, Tcl, Lua, R and Ruby.](http://www.simpleitk.org/)
+-   Journal of Statistical Software: [Special Volume on Magnetic Resonance Imaging in R](https://www.jstatsoft.org/v44/)
+-   [ANTsR](http://picsl.upenn.edu/antsr) is a framework that incorporates ITK and ANTs-based image processing methods into the R programming language.
+-   [SimpleITK](http://www.simpleitk.org/) is a simplified layer built on top of ITK, intended to facilitate its use in rapid prototyping, education, interpreted languages. SimpleITK provides support for 2D and 3D images, and a selected set of pixel types for them. Different image filters may support a different collection of pixel types, in many cases due to computational requirements. The library is wrapped for interpreted languages by using SWIG. In particular, the following wrappings are available: Python, Java, Tcl, Lua, R and Ruby.
