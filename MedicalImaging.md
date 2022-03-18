@@ -1,9 +1,9 @@
 ---
 name: MedicalImaging
 topic: Medical Image Analysis
-maintainer: Brandon Whitcher, Jon Clayden
+maintainer: Brandon Whitcher, Jon Clayden, John Muschelli
 email: bwhitcher@gmail.com
-version: 2022-03-16
+version: 2022-03-17
 source: https://github.com/cran-task-views/MedicalImaging/
 ---
 
@@ -98,6 +98,41 @@ software packages or applications.
     several other file formats that FreeSurfer uses for morphometry and
     surface meshes.
 
+### Visualization
+
+-   The package `r pkg("brainR")` includes functions for
+    creating three-dimensional (3D) and four-dimensional (4D) images
+    using WebGL, RGL, and JavaScript commands. This package relies on
+    the X ToolKit ([XTK](https://github.com/xtk/X#readme)).
+-   `r pkg("Morpho", priority = "core")` is a collection of
+    tools for statistical shape analysis and visualization of point
+    based shape representations (landmarks, meshes). Apart from the core
+    functions such as General Procrustes Analysis and sliding of
+    semi-landmarks, `r pkg("Morpho")` is sporting a variety
+    of statistical procedures to assess group differences and asymmetry,
+    most of them based on permutation/bootstrapping methods. For
+    registration purposes there are functions to calculate landmark
+    transforms (rigid, similarity, affine and thin-plate spline) as well
+    as iterative closest point registration and automated alignment
+    exploiting the shapes' principal axes. To deal with
+    missing/erroneous data there are imputation methods available for
+    missing landmarks and interactive outlier detection. For
+    visualization there are functions to create interactive 3D plots of
+    distance maps as well as visualizing differences between point
+    clouds by deforming rectangular grids, both in 2D and 3D.
+    Additionally, it includes an algorithm to retrodeform surface meshes
+    representing structures that have suffered a series of locally
+    affine deformations (e.g. fossils).
+-   `r pkg("Rvcg", priority = "core")` interfaces
+    [VCGLIB](http://vcg.sourceforge.net) to provide functions for
+    manipulating triangular surface meshes; e.g., surfaces generated
+    from medical image segmentations. Among those manipulations are
+    quadric-edge collapse decimation, smoothing, subsampling, closest
+    point search or uniform remeshing. Additionally it allows the
+    generation of isosurfaces from 3D arrays. It has capabilities for
+    import/export of STL, PLY and OBJ files, both in binary and ASCII
+    format.
+
 ### Magnetic Resonance Imaging (MRI)
 
 *Diffusion MRI*
@@ -174,43 +209,6 @@ software packages or applications.
     relaxometry maps from multi-parameter mapping (MPM) MRI acquisitions,
     including adaptive smoothing.
 
-*Visualization*
-
--   The package `r pkg("brainR")` includes functions for
-    creating three-dimensional (3D) and four-dimensional (4D) images
-    using WebGL, RGL, and JavaScript commands. This package relies on
-    the X ToolKit ([XTK](https://github.com/xtk/X#readme)).
--   `r pkg("Morpho", priority = "core")` is a collection of
-    tools for statistical shape analysis and visualization of point
-    based shape representations (landmarks, meshes). Apart from the core
-    functions such as General Procrustes Analysis and sliding of
-    semi-landmarks, `r pkg("Morpho")` is sporting a variety
-    of statistical procedures to assess group differences and asymmetry,
-    most of them based on permutation/bootstrapping methods. For
-    registration purposes there are functions to calculate landmark
-    transforms (rigid, similarity, affine and thin-plate spline) as well
-    as iterative closest point registration and automated alignment
-    exploiting the shapes' principal axes. To deal with
-    missing/erroneous data there are imputation methods available for
-    missing landmarks and interactive outlier detection. For
-    visualization there are functions to create interactive 3D plots of
-    distance maps as well as visualizing differences between point
-    clouds by deforming rectangular grids, both in 2D and 3D.
-    Additionally, it includes an algorithm to retrodeform surface meshes
-    representing structures that have suffered a series of locally
-    affine deformations (e.g. fossils).
--   `r pkg("Rvcg", priority = "core")` interfaces
-    [VCGLIB](http://vcg.sourceforge.net) to provide functions for
-    manipulating triangular surface meshes; e.g., surfaces generated
-    from medical image segmentations. Among those manipulations are
-    quadric-edge collapse decimation, smoothing, subsampling, closest
-    point search or uniform remeshing. Additionally it allows the
-    generation of isosurfaces from 3D arrays. It has capabilities for
-    import/export of STL, PLY and OBJ files, both in binary and ASCII
-    format.
--   The `r pkg("threeBrain")` package offers a 'WebGL'-based 3D brain
-    viewer for surface-based visualization of medical images.
-
 *Simulation*
 
 -   The package `r pkg("neuRosim", priority = "core")` allows
@@ -278,12 +276,13 @@ metabolites with important biochemical roles.
 
 ### Positron Emission Tomography (PET)
 
--   The `r pkg("occ", priority = "core")` package provides a
+- The `r pkg("occ", priority = "core")` package provides a
     generic function for estimating PET neuro-receptor occupancies by a
     drug, from the total volumes of distribution of a set of regions of
     interest (ROI). Fittings methods include the reference region, the
     *ordinary least squares* (OLS, sometimes known as "occupancy
     plot") and the *restricted maximum likelihood estimation* (REML).
+- The `r pkg("oro.pet", priority = "core")` package contains several parameter estimation routines for PET experiments including: the standard uptake value (SUV), occupancy, the simplified reference tissue model (SRTM), the multilinear reference tissue model (MRTM) and the half maximal inhibitory concentration (IC50).
 
 ### Electroencephalography (EEG)
 
@@ -294,9 +293,9 @@ metabolites with important biochemical roles.
     trial EEG (currently only ascii-exported pre-processed and trial
     segmented in Brain Vision Analyzer), computes averages (i.e.,
     event-related potentials or ERP's) and stores ERP's from multiple
-    data sets in a `             data.frame           ` like object,
+    data sets in a `data.frame` like object,
     such that statistical analysis (linear model, (M)ANOVA) can be done
-    using the familiar R modeling frame work.
+    using the familiar R modeling framework.
 -   `r pkg("eegkit", priority = "core")` includes many useful
     functions for analysing EEG signals (among others, visualizing
     positions of electrodes).
