@@ -3,7 +3,7 @@ name: MedicalImaging
 topic: Medical Image Analysis
 maintainer: Brandon Whitcher, Jon Clayden, John Muschelli
 email: bwhitcher@gmail.com
-version: 2022-03-17
+version: 2022-08-31
 source: https://github.com/cran-task-views/MedicalImaging/
 ---
 
@@ -73,7 +73,6 @@ re-organization of the 348-byte fixed header into more relevant
 categories and the possibility of extending the header information.
 
 -   The packages `r pkg("RNifti", priority = "core")`,
-    `r pkg("AnalyzeFMRI", priority = "core")`,
     `r pkg("fmri")`, `r pkg("tractor.base")`,
     `r pkg("oro.nifti", priority = "core")`,
     `r pkg("neuroim", priority = "core")` and `r pkg("nifti.io")` all
@@ -154,25 +153,6 @@ software packages or applications.
 
 *Functional MRI*
 
--   `r pkg("adaptsmoFMRI")` contains R functions for
-    estimating the blood oxygenation level dependent (BOLD) effect by
-    using functional magnetic resonance imaging (fMRI) data, based on
-    adaptive Gauss Markov random fields, for real as well as simulated
-    data. Inference of the underlying models is performed by efficient
-    Markov Chain Monte Carlo simulation, with the Metropolis Hastings
-    algorithm for the non-approximate case and the Gibbs sampler for the
-    approximate case. When comparing the results of approximate to the
-    non-approximate version the outcome is in favour of the former, as
-    the gain of accuracy in estimation, when not approximating, is
-    minimal and the computational burden becomes less cumbersome.
--   `r pkg("AnalyzeFMRI")` is a package originally written
-    for the processing and analysis of large structural and functional
-    MRI data sets under the ANALYZE format. It has been updated to
-    include new functionality: complete NIfTI input/output,
-    cross-platform visualization based on Tcl/Tk components, and
-    spatial/temporal ICA ([Independent Components
-    Analysis](http://en.wikipedia.org/wiki/Independent_component_analysis))
-    via a graphical user interface (GUI).
 -   The R package `r pkg("fmri")` provides tools for the
     analysis of functional MRI data. The core is the implementation of a
     new class of adaptive smoothing methods. These methods allow for a
@@ -186,8 +166,7 @@ software packages or applications.
     using [Random Field
     Theory](http://imaging.mrc-cbu.cam.ac.uk/imaging/PrinciplesRandomFields).
     It also includes ICA and NGCA (non-Gaussian Components Analysis)
-    based methods and hence has some overlap with
-    `r pkg("AnalyzeFMRI")`.
+    based methods.
 -   Neuroimage is an R package (currently only available within the
     `r rforge("neuroim")` project on R-Forge) that provides
     data structures and input/output routines for functional brain
