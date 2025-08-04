@@ -186,6 +186,9 @@ software packages or applications.
     data structures and input/output routines for functional brain
     imaging data. It reads and writes NIfTI-1 data and provides S4
     classes for handling multi-dimensional images.
+-   The `r pkg("autohrf")` package allows for data-driven estimation of an
+    appropriate hemodynamic response function (HRF), which is deconvolved
+    with the acquired fMRI data to obtain task responses.
 
 *Structural MRI*
 
@@ -221,6 +224,8 @@ metabolites with important biochemical roles.
 -   Package `r pkg("spant")` includes tools for reading, visualizing and
     processing MRS data, including methods for spectral fitting and
     spectral alignment.
+-   `r pkg("tidyspec")` performs spectroscopy analysis using the tidy
+    data philosophy.
 
 ### General Image Processing
 
@@ -266,6 +271,12 @@ metabolites with important biochemical roles.
     completely in R, where you pass R-based NIfTI objects and the
     function executes an FSL command and returns an R-based NIfTI
     object.
+-   `r pkg("combat.enigma")` fits "ComBat" or linear mixed-effects models
+    (LMM), or performs prescaling, to harmonize MRI data from different
+    scanning sites. This is a technique that was adapted to medical
+    imaging from other high-throughput fields such as gene expression
+    analysis (cf. [the `sva` package on
+    Bioconductor](https://doi.org/doi:10.18129/B9.bioc.sva)).
 
 ### Positron Emission Tomography (PET)
 
@@ -280,11 +291,19 @@ metabolites with important biochemical roles.
     standard uptake value (SUV), occupancy, the simplified reference tissue
     model (SRTM), the multilinear reference tissue model (MRTM) and the
     half maximal inhibitory concentration (IC50).
+-   Package `r pkg("neuroSCC")` supports processing PET neuroimaging data
+    in pipelines based on Simultaneous Confidence Corridors (SCCs), for
+    one-group, two-group, or single-patient vs. group comparisons.
+-   The `r pkg("tacmagic")` package handles PET time activity curve (TAC)
+    data in different formats. It supports weighted TAC merging by region
+    of interest (ROI), calculating models including standardized uptake
+    value ratio (SUVR) and distribution volume ratio (DVR), basic plotting
+    functions and calculation of cut-off values.
 
 ### Electroencephalography (EEG)
 
--   `r pkg("edfReader", priority = "core")` reads some of the
-    most popular file formats in EEG recordings.
+-   Packages `r pkg("edfReader", priority = "core")` and `r pkg("ieegio")`
+    read some of the most popular file formats in EEG recordings.
 -   The EEG package (currently only available within the
     `r rforge("eeg")` project on R-Forge) reads in single
     trial EEG (currently only ascii-exported pre-processed and trial
@@ -295,7 +314,8 @@ metabolites with important biochemical roles.
     using the familiar R modeling framework.
 -   `r pkg("eegkit", priority = "core")` includes many useful
     functions for analysing EEG signals (among others, visualizing
-    positions of electrodes).
+    positions of electrodes). There is also an associated data package,
+    `r pkg("eegkitdata")`.
 -   `r pkg("PTAk")` is an R package that uses a multiway
     method to decompose a tensor (array) of any order, as a
     generalisation of a singular value decomposition (SVD) also
@@ -304,6 +324,9 @@ metabolites with important biochemical roles.
     additional multiway methods: PCAn (Tucker-n) and PARAFAC/CANDECOMP
     with these extensions. Applications include the analysis of EEG and
     functional MRI data.
+-   The `r pkg("EZFragility")` package computes the "neural fragility"
+    matrix from intracranial EEG to examine brain dynamics during seizures.
+    It also offers some preprocessing and visualization features.
 
 ### Links
 
