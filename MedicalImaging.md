@@ -300,10 +300,6 @@ metabolites with important biochemical roles.
     additional multiway methods: PCAn (Tucker-n) and PARAFAC/CANDECOMP
     with these extensions. Applications include the analysis of EEG and
     functional MRI data.
--   The `r pkg("raveio")` package supports the "R analysis and
-    visualization of human intracranial electroencephalography data"
-    (RAVE) project for analysis of EEG data from depth or surface
-    recordings.
 
 
 ### Links
