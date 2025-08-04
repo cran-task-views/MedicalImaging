@@ -3,7 +3,7 @@ name: MedicalImaging
 topic: Medical Image Analysis
 maintainer: Brandon Whitcher, Jon Clayden, John Muschelli
 email: bwhitcher@gmail.com
-version: 2022-08-31
+version: 2025-08-04
 source: https://github.com/cran-task-views/MedicalImaging/
 ---
 
@@ -19,7 +19,7 @@ designed for the domain.
 The packages in this task view are designed to read and write these
 files, visualize medical images and process them in various ways. Some
 of them are applicable to conventional images as well, and some
-general-purpose image-processing package can also be used with medical
+general-purpose image-processing packages can also be used with medical
 image data. The image intensities, stored per pixel or voxel (3D pixel),
 generally map naturally into an R `array`, which is a standard data
 structure and therefore suitable for interoperable working with base R
