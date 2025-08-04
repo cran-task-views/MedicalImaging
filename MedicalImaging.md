@@ -269,13 +269,17 @@ metabolites with important biochemical roles.
 
 ### Positron Emission Tomography (PET)
 
-- The `r pkg("occ", priority = "core")` package provides a
+-   The `r pkg("occ", priority = "core")` package provides a
     generic function for estimating PET neuro-receptor occupancies by a
     drug, from the total volumes of distribution of a set of regions of
     interest (ROI). Fittings methods include the reference region, the
     *ordinary least squares* (OLS, sometimes known as "occupancy
     plot") and the *restricted maximum likelihood estimation* (REML).
-- The `r pkg("oro.pet", priority = "core")` package contains several parameter estimation routines for PET experiments including: the standard uptake value (SUV), occupancy, the simplified reference tissue model (SRTM), the multilinear reference tissue model (MRTM) and the half maximal inhibitory concentration (IC50).
+-   The `r pkg("oro.pet", priority = "core")` package contains several
+    parameter estimation routines for PET experiments including: the
+    standard uptake value (SUV), occupancy, the simplified reference tissue
+    model (SRTM), the multilinear reference tissue model (MRTM) and the
+    half maximal inhibitory concentration (IC50).
 
 ### Electroencephalography (EEG)
 
@@ -301,9 +305,21 @@ metabolites with important biochemical roles.
     with these extensions. Applications include the analysis of EEG and
     functional MRI data.
 
-
 ### Links
--   Journal of Statistical Software [special volume on Magnetic Resonance Imaging in R](https://www.jstatsoft.org/v44/).
--   [Neuroconductor](https://neuroconductor.org) is a Bioconductor-like platform for rapid testing and dissemination of reproducible computational imaging software in R.
--   [ANTsR](http://picsl.upenn.edu/antsr) is a framework that incorporates ITK and ANTs-based image processing methods into the R programming language.
--   [SimpleITK](http://www.simpleitk.org/) is a simplified layer built on top of ITK, intended to facilitate its use in rapid prototyping, education, interpreted languages. SimpleITK provides support for 2D and 3D images, and a selected set of pixel types for them. Different image filters may support a different collection of pixel types, in many cases due to computational requirements. The library is wrapped for interpreted languages by using SWIG. In particular, the following wrappings are available: Python, Java, Tcl, Lua, R and Ruby.
+
+-   Journal of Statistical Software [special volume on Magnetic Resonance
+    Imaging in R](https://www.jstatsoft.org/v44/).
+-   [Neuroconductor](https://neuroconductor.org) is a Bioconductor-like
+    platform for rapid testing and dissemination of reproducible
+    computational imaging software in R.
+-   [ANTsR](http://picsl.upenn.edu/antsr) is a framework that incorporates
+    ITK and ANTs-based image processing methods into the R programming
+    language.
+-   [SimpleITK](http://www.simpleitk.org/) is a simplified layer built on
+    top of ITK, intended to facilitate its use in rapid prototyping,
+    education, interpreted languages. SimpleITK provides support for 2D
+    and 3D images, and a selected set of pixel types for them. Different
+    image filters may support a different collection of pixel types, in
+    many cases due to computational requirements. The library is wrapped
+    for interpreted languages by using SWIG. In particular, the following
+    wrappings are available: Python, Java, Tcl, Lua, R and Ruby.
