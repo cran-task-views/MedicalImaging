@@ -74,7 +74,7 @@ categories and the possibility of extending the header information.
 
 -   The packages `r pkg("RNifti", priority = "core")`,
     `r pkg("fmri")`, `r pkg("tractor.base")`,
-    `r pkg("oro.nifti", priority = "core")`,
+    `r pkg("oro.nifti", priority = "core")`, `r pkg("AnalyzeFMRI")`,
     `r pkg("neuroim", priority = "core")` and `r pkg("nifti.io")` all
     provide functions that read/write ANALYZE and NIfTI files. They use
     a variety of internal data structures, but in each case the pixel or
@@ -178,6 +178,9 @@ software packages or applications.
     Theory](http://imaging.mrc-cbu.cam.ac.uk/imaging/PrinciplesRandomFields).
     It also includes ICA and NGCA (non-Gaussian Components Analysis)
     based methods.
+-   `r pkg("AnalyzeFMRI")` also offers tools for fMRI processing, including
+    smoothing and spatial/temporary ICA, as well as providing a
+    cross-platform graphical interface based on Tcl/Tk.
 -   Neuroimage is an R package (currently only available within the
     `r rforge("neuroim")` project on R-Forge) that provides
     data structures and input/output routines for functional brain
