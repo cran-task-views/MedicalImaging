@@ -3,7 +3,7 @@ name: MedicalImaging
 topic: Medical Image Analysis
 maintainer: Brandon Whitcher, Jon Clayden, John Muschelli
 email: bwhitcher@gmail.com
-version: 2025-08-04
+version: 2025-08-05
 source: https://github.com/cran-task-views/MedicalImaging/
 ---
 
@@ -83,6 +83,17 @@ categories and the possibility of extending the header information.
 -   Several other packages outlined below use one of these to perform
     their file I/O.
 
+*BIDS*
+
+[BIDS](https://bids.neuroimaging.io), for Brain Imaging Data Structure,
+uses the NIfTI-1 file format for images, but also specifies a wide range
+of standardised structures for storing additional metadata using simple
+text formats. It also specifies naming conventions for predictability and
+interoperability.
+
+-   The `r pkg("bidsr")` package offers a parser for datasets complying
+    with the BIDS standard.
+
 *Other formats*
 
 There are a number of other formats that are specific to certain other
@@ -96,6 +107,9 @@ software packages or applications.
     format, and `r pkg("freesurferformats")` can read this plus
     several other file formats that FreeSurfer uses for morphometry and
     surface meshes.
+-   `r pkg("tractor.base")` also reads images in the
+    [MRtrix](https://www.mrtrix.org) image format (.mif).
+    
 
 ### Visualization
 
@@ -103,6 +117,8 @@ software packages or applications.
     creating three-dimensional (3D) and four-dimensional (4D) images
     using WebGL, RGL, and JavaScript commands. This package relies on
     the X ToolKit ([XTK](https://github.com/xtk/X#readme)).
+-   `r pkg("threeBrain")` offers another WebGL-based 3D viewer for
+    showing brain surfaces.
 -   `r pkg("Morpho", priority = "core")` is a collection of
     tools for statistical shape analysis and visualization of point
     based shape representations (landmarks, meshes). Apart from the core
