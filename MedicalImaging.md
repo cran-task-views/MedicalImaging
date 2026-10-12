@@ -181,8 +181,6 @@ software packages or applications.
     high angular resolution diffusion weighted imaging (HARDI) using
     Q-ball reconstruction and tensor mixture models, several methods
     for structural adaptive smoothing, and fiber tracking.
--   The `r pkg("dmri.tracking")` package also implements a fiber
-    tracking algorithm.
 
 *Functional MRI*
 
