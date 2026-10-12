@@ -283,6 +283,11 @@ metabolites with important biochemical roles.
 -   The `r pkg("imbibe")` package provides a set of fast, chainable
     image-processing operations which are applicable to images of two,
     three or four dimensions, particularly medical images.
+-   File format agnostic generalised image types, including packed and
+    sparse representations, are provided by the
+    `r pkg("imply", priority = "core")` package. The package also offers
+    parallelised `apply()` variants to apply functions to image slices or
+    volumes.
 -   The package `r pkg("mmand", priority = "core")`
     (Mathematical Morphology in Any Number of Dimensions) provides
     morphological operations like erode and dilate, opening and closing,
