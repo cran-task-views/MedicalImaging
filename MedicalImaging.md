@@ -80,6 +80,11 @@ categories and the possibility of extending the header information.
     a variety of internal data structures, but in each case the pixel or
     voxel data can be converted to a standard R `array` quite
     straightforwardly.
+-   The `r pkg("neurobase")` package builds on the `nifti` class from
+    `r pkg("oro.nifti")`, adding helper functions for reading, writing,
+    manipulating and visualizing these images. It underpins several of
+    the [Neuroconductor](https://neuroconductor.org) packages, including
+    `r pkg("fslr")` and `r pkg("freesurfer")`.
 -   Several other packages outlined below use one of these to perform
     their file I/O.
 
@@ -102,6 +107,12 @@ software packages or applications.
 -   The `r pkg("gifti")` package reads the GIFTI geometry format, and
     the `r pkg("cifti")` package reads the CIFTI connectivity format.
     Both are related to the NIfTI image format mentioned above.
+-   `r pkg("ciftiTools")` reads, writes and manipulates CIFTI data in a
+    single `xifti` object, covering the "dscalar", "dlabel" and
+    "dtseries" intents. Because it also reads the associated surface
+    geometry from GIFTI files, it supports spatially-dependent
+    operations such as smoothing and static or interactive
+    visualization of the cortical surface.
 -   Package `r pkg("tractor.base")` can read
     [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/)'s MGH/MGZ image
     format, and `r pkg("freesurferformats")` can read this plus
@@ -119,6 +130,12 @@ software packages or applications.
     the X ToolKit ([XTK](https://github.com/xtk/X#readme)).
 -   `r pkg("threeBrain")` offers another WebGL-based 3D viewer for
     showing brain surfaces.
+-   `r pkg("fsbrain")` works at the level of subjects and groups,
+    loading morphometry data, surfaces and atlas-based parcellations
+    from [FreeSurfer](https://freesurfer.net/) output directories and
+    rendering them, including statistical results, on brain surfaces.
+    Data can be masked by label or restricted to particular atlas
+    regions.
 -   `r pkg("Morpho", priority = "core")` is a collection of
     tools for statistical shape analysis and visualization of point
     based shape representations (landmarks, meshes). Apart from the core
@@ -287,6 +304,14 @@ metabolites with important biochemical roles.
     completely in R, where you pass R-based NIfTI objects and the
     function executes an FSL command and returns an R-based NIfTI
     object.
+-   The `r pkg("freesurfer")` package takes the same approach for
+    [FreeSurfer](https://surfer.nmr.mgh.harvard.edu/), another widely
+    used neuroimaging software suite, wrapping its command line tools so
+    that `nifti` objects can be passed in and returned. Among others, it
+    covers the `recon-all` cortical reconstruction pipeline, volume and
+    surface format conversion, skull stripping, resampling between
+    surfaces, and tabulating the segmentation and parcellation
+    statistics that FreeSurfer produces.
 -   `r pkg("combat.enigma")` fits "ComBat" or linear mixed-effects models
     (LMM), or performs prescaling, to harmonize MRI data from different
     scanning sites. This is a technique that was adapted to medical
